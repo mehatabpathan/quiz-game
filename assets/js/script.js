@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
 //selecting all required elements
-const start_btn = document.querySelector(".start_btn button");
+const start_btn = document.querySelectorAll(".start_btn button");
 const info_box = document.querySelector(".info_box");
-const info_box1 = document.querySelector(".info_box");
+const info_box1 = document.querySelector(".info_box1");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
@@ -13,12 +13,19 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 //If StartQuiz Button clicked
-start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show the info box
-    info_box1.classList.add("activeInfo"); //show the info box1
-};
+start_btn.forEach(button => {
+    button.addEventListener('click', () => {
+    var jsbool = button.classList.contains("js");
+    if(jsbool){
+        info_box.classList.add("activeInfo");  //show the info box1
+    }else{
+        info_box1.classList.add("activeInfo"); //show the info box1
+    }
+    });
+});
 
-// if ExitQuiz button clicked
+
+//if ExitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
     info_box1.classList.remove("activeInfo"); //hide the info box1
