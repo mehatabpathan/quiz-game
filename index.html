@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Fun quiz about Estonia</title>   
+    <title>quiz about java script</title>   
     
 </head>
 <body>
@@ -28,11 +28,32 @@
             <button class="restart">Continue</button>
         </div>
     </div>
+    <!---Info box 2-->
+    <div class="info_box1">
+        <div class="info_title">
+            <span>Some Rules of this Quiz:</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>20 seconds </span> per each question.</div>
+            <div class="info">2. Once you selected your answer, you can't reselect.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>   
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
 
     <!--Quiz Box-->
     <div class="quiz_box">
         <header>
-            <div class="title">Fun quiz about Estonia!</div>
+            
+            <div class="title">Quiz Game!</div>
+            <div class = "quiz-score flex">
+                <span id = "correct-score"></span>/<span id = "total-question"></span>
+            </div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">20</div>
@@ -41,34 +62,34 @@
         </header>
         <section>
             <div class="que_text">
-                <span>Where is Estonia located?</span>
+                <span>How to write an IF statement in JavaScript?</span>
             </div>
             <div class="option_list">
                 <div class="option">
-                    <span>Asia</span>
+                    <span>if i = 5 then</span>
                     <div class="icon tick"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="option">
-                    <span>Northern Europe</span>
+                    <span> if i == 5 then</span>
                     <div class="icon cross"><i class="fas fa-times"></i></div>
                 </div>
                 <div class="option">
-                    <span>The Balkan peninsula</span>
+                    <span>if (i == 5)</span>
                 </div>
                 <div class="option">
-                    <span>Africa</span>
+                    <span>if i = 5</span>
                 </div>
             </div>
         </section>
 
-        <!--Quiz box footer-->
-        <footer>
-            <div class="total_que">
-                <p><span>2</span> Of <span>5</span> Questions </p>
-            </div>
-            <button class="next_btn"> Click Next </button>
-        </footer>
-    </div>
+      <!--Quiz box footer-->
+      <footer>
+        <div class="total_que">
+          <span> <strong> 2 </strong>&nbsp; Of &nbsp;<strong> 10 </strong> &nbsp; Questions &nbsp; </span> 
+        </div>
+        <button class="next_btn"> Click Next </button>
+    </footer>
+</div>
 
     <!--Result Box-->
     <div class="result_box">
@@ -79,7 +100,7 @@
         </div>
         <div class="complete_text">You've completed the Quiz!</div>
         <div class="score_text">
-            <p> and sorry, You got only <span>2</span> out of <span>5</span></p>
+            <p> and sorry, You got only <span>2</span> out of <span>10</span></p>
         </div>
         <div class="buttons">
             <button class="restart">Replay</button> 

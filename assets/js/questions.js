@@ -2,57 +2,114 @@
 let questions = [
     {
         numb: 1,
-        question: "Where is Estonia located?",
-        answer: "Northern Europe",
+        question: "How to write an IF statement in JavaScript?",
+        answer: "if (i == 5)",
         options: [
-            "Asia",
-            "Northern Europe",
-            "The Balkan peninsula",
-            "Africa"
+               "if i = 5 then",
+               "if i == 5 then",
+               "if (i == 5)",
+               " if i = 5"
         ]
     },
     {
         numb: 2,
-        question: "What is the Estonian sport called 'kiiking' involved?",
-        answer: "Participants attach themselves to giant steel swings that rotate a full 360 degrees",
+        question: "How does a FOR loop start?",
+        answer: "for (i = 0; i &lt;= 5; i++)",
         options: [
-            "Triathlone with sauna breaks",
-            "Knitting and crocheting while jogging",
-            "Car racing on an iced oversea",
-            "Participants attach themselves to giant steel swings that rotate a full 360 degrees"
+            
+             "for (i = 0; i &lt;= 5)",
+             "for (i = 0; i &lt;= 5; i++)",
+             "for i = 1 to 5",
+             "for (i &lt;= 5; i++)"
         ]
-    },
+     },
     {
         numb: 3,
-        question: "How many islands and islets does Estonia have in the Baltic sea?",
-        answer: "Over 2000",
+        question: "How does a WHILE loop start?",
+        answer: "while (i &lt;= 10)",
         options:[
-            "Over 2000",
-            "None",
-            "Five",
-            "one hundred"
-        ]
+            "while i = 1 to 10",
+             "while (i &lt;= 10; i++)",
+             "while (i &lt;= 10)",
+             "while (i=1 to 10)"
+            ]
     },
     {
         numb: 4,
-        question: "What was invented in Estonia?",
-        answer: "Skype, the online video call service",
+        question: "How do you round the number 7.25, to the nearest integer?",
+        answer: "Math.round(7.25)",
         options: [
-            "Musical instrument Saxophone",
-            "The first antibiotic substance, Penicillin",
-            "The Steam Engine",
-            "Skype, the online video call service"
-        ]
+              "rnd(7.25)",
+            "Math.round(7.25)",
+             "Math.rnd(7.25)",
+            "round(7.25)"
+             ]
     },
     {
         numb: 5,
-        question: "What can you do with an e-Residency in Estonia?",
-        answer: "It allows entrepreneurs from all over the world to start an EU-based company and manage their business entirely online",
+        question: "How do you find the number with the highest value of x and y?",
+        answer: "Math.max(x, y)",
         options: [
-            "It allows entrepreneurs from all over the world to start an EU-based company and manage their business entirely online",
-            "It allows free travel tickets for non-Estonian residence",
-            "It allows you to get all items starting with letter E for free",
-            "It allows you to use saunas entirely online"
+            "Math.max(x, y)",
+             "Math.ceil(x, y)",
+             "top(x, y)",
+             "ceil(x, y)"
+            ]
+    },
+    {
+        numb: 6,
+        question: "How can you add a comment in a JavaScript?",
+        answer: "//This is a comment",
+        options: [
+                 "//This is a comment",
+                "&sbquo;This is a comment",
+                 "&lt;!--This is a comment--&gt;",
+                 "/This is a comment"
+
+            ]
+    },
+    {
+        numb: 7,
+        question: "How to insert a comment that has more than one line?",
+        answer: "/*This comment has more than one line*/",
+        options: [
+                "/*This comment has more than one line*/",
+                "//This comment has more than one line//",
+             "&lt;!--This comment has more than one line--&gt;",
+             "/This comment has more than one line"
+             ]
+    },
+    {
+        numb: 8,
+        question: "How do you declare a JavaScript variable?",
+        answer: "var carName;",
+        options: [
+            "var carName;",
+            "variable carName;",
+            "v carName;",
+            "var CarName;"
         ]
+    },
+    {
+        numb: 9,
+        question: "Which event occurs when the user clicks on an HTML element?",
+        answer: "onclick",
+        options: [
+                "onchange",
+                "onclick",
+                "onmouseclick",
+                "onmouseover"
+            ]
+    },
+    {
+        numb: 10,
+        question: "Which operator is used to assign a value to a variable?",
+        answer: "=",
+        options: [
+                 "*",
+                "-",
+                 "=",
+                 "x"
+            ]
     },
 ];

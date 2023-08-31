@@ -143,6 +143,7 @@ function optionSelected(answer){
     
 } 
 
+
 // function showResult
 function showResult(){
     info_box.classList.remove("activeInfo");  //hide the info box
