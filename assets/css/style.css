@@ -100,18 +100,18 @@ body {
     padding: 15px 30px;
 }
 
-.info_box .info_list .info{
+.info_box .info_box1 .info_list .info{
     margin: 5px 0;
     font-size: 17px;
 }
 
-.info_box  .info_list .info span{
+.info_box .info_box1  .info_list .info span{
     font-weight: 600;
     color: #007bff;
 }
 
 /* Info box buttons */
-.info_box .buttons{
+.info_box .info_box1 .buttons{
     height: 60px;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ body {
     border-top: 1px solid lightgrey;
 }
 
-.info_box  .buttons button{
+.info_box .info_box1 .buttons button{
     margin: 0 5px;
     height: 40px;
     width: 100px;
