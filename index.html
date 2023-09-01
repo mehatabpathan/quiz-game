@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Programming Quiz </title>   
-    
+    <title>Programming Quiz Game</title>
+
 </head>
+
 <body>
-    <!--Start Quiz Button-->
+
     <div class="container">
         <h1>Programming Quiz</h1>
         <div class="grid-container">
@@ -25,6 +27,8 @@
             </div>
         </div>
     </div>
+
+
     <!--Info box-->
     <div class="info_box">
         <div class="info_title">
@@ -42,12 +46,11 @@
             <button class="restart">Continue</button>
         </div>
     </div>
-                 
+
     <!--Quiz Box-->
     <div class="quiz_box">
         <header>
-            
-            <div class="title">Programming Quiz/div>
+            <div class="title">Programming Quiz Game!</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">20</div>
@@ -56,39 +59,39 @@
         </header>
         <section>
             <div class="que_text">
-                <span>How to write an IF statement in JavaScript?</span>
+                <span>Where is Estonia located?</span>
             </div>
             <div class="option_list">
                 <div class="option">
-                    <span>if i = 5 then</span>
+                    <span>Asia</span>
                     <div class="icon tick"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="option">
-                    <span> if i == 5 then</span>
+                    <span>Northern Europe</span>
                     <div class="icon cross"><i class="fas fa-times"></i></div>
                 </div>
                 <div class="option">
-                    <span>if (i == 5)</span>
+                    <span>The Balkan peninsula</span>
                 </div>
                 <div class="option">
-                    <span>if i = 5</span>
+                    <span>Africa</span>
                 </div>
             </div>
         </section>
 
-      <!--Quiz box footer-->
-      <footer>
-        <div class="total_que">
-          <span> <strong> 2 </strong>&nbsp; Of &nbsp;<strong> 10 </strong> &nbsp; Questions &nbsp; </span> 
-        </div>
-        <button class="next_btn"> Click Next </button>
-    </footer>
-</div>
+        <!--Quiz box footer-->
+        <footer>
+            <div class="total_que">
+                <p><span>2</span> Of <span>10</span> Questions </p>
+            </div>
+            <button class="next_btn"> Click Next </button>
+        </footer>
+    </div>
 
     <!--Result Box-->
     <div class="result_box">
         <div class="icon">
-            <div class="icon"> 
+            <div class="icon">
                 <i class="fas fa-trophy"></i>
             </div>
         </div>
@@ -97,13 +100,13 @@
             <p> and sorry, You got only <span>2</span> out of <span>10</span></p>
         </div>
         <div class="buttons">
-            <button class="restart">Replay</button> 
+            <button class="restart">Replay</button>
             <button class="quit">Quit</button>
         </div>
     </div>
 
-    <!--Inside this JavaScript and html&css files I've inserted Questions and Options only-->
-    <script src="assets/js/questions.js"></script>
+    <!--Inside this JavaScript file I've inserted Questions and Options only-->
+    <script src="assets/js/jsquestions.js"></script>
     <script src="assets/js/htmlcssquestions.js"></script>
 
     <!--Inside this JavaScript file I've coded all Quiz Codes-->
@@ -112,4 +115,5 @@
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
