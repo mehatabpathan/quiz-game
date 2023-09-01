@@ -54,6 +54,18 @@ body {
     color: #fff;
     background: #007bff;
 }
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    color:red;
+    text-shadow:2px 2px 2px #000;
+}
 
 .start_btn,
 .info_box,
