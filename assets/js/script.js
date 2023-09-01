@@ -1,5 +1,5 @@
 //selecting all required elements
-cconst start_btn = document.querySelectorAll(".start_btn button");
+const start_btn = document.querySelectorAll(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
@@ -16,12 +16,15 @@ start_btn.forEach(button => {
     button.addEventListener('click', () => {
     var jsbool = button.classList.contains("js");
     if(jsbool){
-        info_box.classList.add("activeInfo");  //show the info box1
+        info_box.classList.add("activeInfo");  //show the info_box
+        questions = jsquestions;
     }else{
-        info_box1.classList.add("activeInfo"); //show the info box1
+        info_box.classList.add("activeInfo"); //show the info_box
+        questions = html&cssquestion;
     }
     });
 });
+
 
 
 //if ExitQuiz button clicked
