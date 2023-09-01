@@ -67,6 +67,33 @@ body {
     text-shadow:2px 2px 2px #000;
 }
 
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 5px;
+}
+
+.js,
+.htmlcss{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .start_btn,
 .info_box,
 .info_box1,
