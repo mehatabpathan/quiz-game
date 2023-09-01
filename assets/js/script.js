@@ -30,7 +30,6 @@ start_btn.forEach(button => {
 //if ExitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
-    info_box1.classList.remove("activeInfo"); //hide the info box1
 };
 
 // if continueQuiz button clicked
