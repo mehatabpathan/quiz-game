@@ -26,7 +26,6 @@ start_btn.forEach(button => {
 });
 
 
-
 //if ExitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
@@ -35,7 +34,6 @@ exit_btn.onclick = ()=>{
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
-    info_box1.classList.remove("activeInfo"); //hide the info box1
     quiz_box.classList.add("activeQuiz"); //show the quiz box
     showQuestions(0); //calling showQuestions function
     queCounter(1); //passing 1 parameter to queCounter
