@@ -15,7 +15,7 @@ var questions = {};
 //If StartQuiz Button clicked
 start_btn.forEach(button => {
     button.addEventListener('click', () => {
-        container.style.opacity = "0";   
+        container[0].style.opacity = "0";   
     var jsbool = button.classList.contains("js");
     
     if(jsbool){
@@ -31,6 +31,7 @@ start_btn.forEach(button => {
 
 //if ExitQuiz button clicked
 exit_btn.onclick = ()=>{
+    container[0].style.opacity = "1"
     info_box.classList.remove("activeInfo"); //hide the info box
 };
 
@@ -76,6 +77,7 @@ restart_quiz.onclick = ()=>{
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
+    container[0].style.opacity = "1"
     window.location.reload();
 };
 
