@@ -15,7 +15,9 @@ var questions = {};
 //If StartQuiz Button clicked
 start_btn.forEach(button => {
     button.addEventListener('click', () => {
+        container.style.opacity = "0";   
     var jsbool = button.classList.contains("js");
+    
     if(jsbool){
         info_box.classList.add("activeInfo");  //show the info_box
         questions = jsquestions;
