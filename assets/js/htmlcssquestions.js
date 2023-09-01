@@ -1,5 +1,5 @@
 //creating an array and passing the number, questions, options, and answers
-let question1 = [
+let htmlcssquestions = [
     {
         numb: 1,
         question: "What does HTML stand for?",
