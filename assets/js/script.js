@@ -16,7 +16,6 @@ var questions = {};
 start_btn.forEach(button => {
     button.addEventListener('click', () => {
     var jsbool = button.classList.contains("js");
-    container.style.opacity = "0";
     if(jsbool){
         info_box.classList.add("activeInfo");  //show the info_box
         questions = jsquestions;
@@ -30,7 +29,6 @@ start_btn.forEach(button => {
 
 //if ExitQuiz button clicked
 exit_btn.onclick = ()=>{
-    container.style.opacity = "1";
     info_box.classList.remove("activeInfo"); //hide the info box
 };
 
@@ -76,7 +74,6 @@ restart_quiz.onclick = ()=>{
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
-    container.style.opacity = "1";
     window.location.reload();
 };
 
