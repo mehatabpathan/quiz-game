@@ -20,7 +20,7 @@ start_btn.forEach(button => {
         questions = jsquestions;
     }else{
         info_box.classList.add("activeInfo"); //show the info_box
-        questions = html&cssquestion;
+        questions = htmlquestion;
     }
     });
 });
