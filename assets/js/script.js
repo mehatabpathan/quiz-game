@@ -85,7 +85,11 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 
 //If Click Next button clicked
 next_btn.onclick = ()=>{
-    if(que_count < questions.length - 1){
+    nextClick();
+};
+
+function nextClick() {
+    if (que_count < questions.length - 1) {
         que_count++;
         que_numb++;
         showQuestions(que_count);
@@ -96,12 +100,12 @@ next_btn.onclick = ()=>{
         startTimerLine(widthValue);
         timeText.textContent = "Time Left";
         next_btn.classList.remove("show");
-    }else{
+    } else {
         clearInterval(counter);
         clearInterval(counterLine);
         showResult();
     }
-};
+}
 
 // getting questions and options from array
 function showQuestions(index){
@@ -154,6 +158,11 @@ function optionSelected(answer){
         option_list.children[i].classList.add("disabled");
     }
     next_btn.classList.add("show");
+
+    setTimeout(function() {
+        nextClick();
+    }, 2000);
+    
     
 } 
 

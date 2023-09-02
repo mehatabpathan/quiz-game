@@ -14,23 +14,23 @@ let jsquestions = [
     {
         numb: 2,
         question: "How does a FOR loop start?",
-        answer: "for (i = 0; i &lt;= 5; i++)",
+        answer: "for (i = 0; i< 5; i++)",
         options: [
             
-             "for (i = 0; i &lt;= 5)",
-             "for (i = 0; i &lt;= 5; i++)",
+             "for (i = 0; i <= 5)",
+             "for (i = 0; i< 5; i++)",
              "for i = 1 to 5",
-             "for (i &lt;= 5; i++)"
+             "for (i <= 5; i++)"
         ]
      },
     {
         numb: 3,
         question: "How does a WHILE loop start?",
-        answer: "while (i &lt;= 10)",
+        answer: "while (i <= 10)",
         options:[
             "while i = 1 to 10",
-             "while (i &lt;= 10; i++)",
-             "while (i &lt;= 10)",
+             "while (i <= 10; i++)",
+             "while (i <= 10)",
              "while (i=1 to 10)"
             ]
     },
