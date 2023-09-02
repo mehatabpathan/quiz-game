@@ -93,17 +93,9 @@ Footer with social links to the author that open in new tabs.
 | HTML Validation All | Y |
 | Contrast checker | Y |
 | CSS Validation | Y |
-| JavaScript Validation indez.js | Y |
-| JavaScript Validation quiz.js | Y |
-| JavaScript Validation highscores.js | Y |
-| JavaScript Validation end.js | Y |
-| JavaScript Validation error.js | Y |
-| Mobile landscape where width <= 768px with an error message to rotate | Y |
-| Message for no JavaScript displaying when it should | Y |
-| Footer stays at bottom of page always | Y |
-| Rotate Message shows when it should | Y |
-| No JavaScript message displays when its not installed or disabled | Y |
-| 404 page at deployed location works as intended | Y |
+| JavaScript Validation script.js | Y |
+| JavaScript Validation jsquestions.js | Y |
+| JavaScript Validation htmlcssquestions.js | Y |
 
 ### bugs encountered
 
@@ -126,25 +118,20 @@ Footer with social links to the author that open in new tabs.
 ### CSS
 - checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) No CSS issues
 
-![W3 CSS Validation Image](./assets/images/readme/cssvalidation/cssvalidation.png)
+![W3 CSS Validation Image](./assets/images/cssvalidationss.png)
 
 ### HTML
-- checked with [W3 HTML Validator](https://validator.w3.org/) No HTML validation issues found
+- checked with [W3 HTML Validator](./assets/images/htmlvalidationss.png) No HTML validation issues found
 
-**Index.html**
-![W3 HTML Validation Image Index Page](assets/images/readme/htmlvalidation/indexvalidation.png)
+**Script.js**
+![W3 HTML Validation Image Index Page](assets/images/script.js%20validationss.png)
 
-**Quiz.html**
-![W3 HTML Validation Image Quiz Page](assets/images/readme/htmlvalidation/quizvalidation.png)
+**jsquestions.js**
+![W3 HTML Validation Image Quiz Page](assets/images/jsquestionvalidationss.png)
 
-**End.html**
-![W3 HTML Validation Image End Page](assets/images/readme/htmlvalidation/endvalidation.png)
+**htmlcssquestions.js**
+![W3 HTML Validation Image End Page](assets/images/htmlcssqvaliss.png)
 
-**Leaderboard.html**
-![W3 HTML Validation Image Leaderboard Page](assets/images/readme/htmlvalidation/leaderboardvalidation.png)
-
-**404.html**
-![W3 HTML Validation Image 404 Page](./assets/images/readme/htmlvalidation/404validation.png)
 
 ### Contrast
 - Checked all pages with [A11Y contrast checker](https://color.a11y.com/) Any contrast issues?
