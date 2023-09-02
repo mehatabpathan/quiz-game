@@ -1,12 +1,7 @@
-# JavaScript Showdown!
+# Programming Quiz!
 
-Created using JavaScript, HTML, and CSS, this interactive quiz serves as a demonstration of my programming skills. Its primary objective is to provide users with a platform to assess their proficiency in JavaScript. The quiz encompasses four distinct pages, each contributing to the seamless functioning of the interactive experience. Through the implementation of five separate scripts, the code maintains clarity and conciseness by targeting specific functionalities on each page.
+Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed to test your knowledge of core JavaScript and HTML/CSS concepts, syntax, and best practices. Whether you're a beginner looking to reinforce your understanding or an experienced developer seeking to sharpen your skills, this quiz offers a range of questions to challenge your JavaScript and HTML/CSS expertise.
 
-The rationale behind employing a multi-page approach, as opposed to a singular page, lies in the pursuit of organized and structured code. This design choice results in more concise scripts, tailored to the unique requirements of each page. While a unified page may offer quicker initial loading times, the segmented layout aligns better with my creative intentions. Furthermore, this architecture guarantees a fresh quiz experience with each iteration or page refresh, enhancing user engagement.
-
-Optimized for traditional desktop and laptop browsers, as well as portrait-oriented mobile devices, the quiz functions flawlessly within these parameters. However, landscape mode may present compatibility challenges.
-
----
 ## User Stories
 - As a user, I want to be able to start the quiz and see the first question.
 - As a user, I want to see a progress indicator showing the current question number out of the total questions.
