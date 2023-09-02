@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 //selecting all required elements
 const start_btn = document.querySelectorAll(".start_btn button");
 const info_box = document.querySelector(".info_box");
