@@ -148,50 +148,12 @@ All Scripts checked with [JSHint](https://jshint.com/)
 | script.js | No Errors | 5 Warnings all to do with compatibility | None |
 | jsquestions.js | No Errors | no warnings| None |
 | htmlcssquestions.js | No Errors | no warnings| None |
-### Index.html
-**Chrome lighthouse desktop**
 
-![Screencap index.html lighthouse desktop](./assets/images/readme/lighthouse/index/indexdesktoplh.png)
+### Light House
 
-**Chrome mobile lighthouse**
 
-![Screencap index.html lighthouse mobile](./assets/images/readme/lighthouse/index/indexmobilelh.png)
+![lighthouse ](./assets/images/lighthousess.png)
 
-### Quiz.html
-**Chrome lighthouse Desktop**
-
-![Screencap quiz.html lighthouse desktop](./assets/images/readme/lighthouse/quiz/quizdesktoplh.png)
-
-**Chrome lighthouse mobile**
-
-![Screencap quiz.html lighthouse mobile](./assets/images/readme/lighthouse/quiz/quizmobilelh.png)
-
-### End.html
-**Chrome lighthouse Desktop**
-
-![Screencap end.html lighthouse desktop](./assets/images/readme/lighthouse/end/endmobilelh.png)
-
-**Chrome lighthouse mobile**
-
-![Screencap reviews.html lighthouse mobile](./assets/images/readme/lighthouse/end/endmobilelh.png)
-
-### Leaderboard.html
-**Chrome lighthouse Desktop**
-
-![Screencap leaderboard.html lighthouse desktop](./assets/images/readme/lighthouse/leaderboard/leaderdesktoplh.png)
-
-**Chrome lighthouse mobile**
-
-![Screencap signup.html lighthouse mobile](./assets/images/readme/lighthouse/leaderboard/leadermobilelh.png)
-
-### 404.html
-**Chrome lighthouse Desktop**
-
-![Screencap leaderboard.html lighthouse desktop](./assets/images/readme/lighthouse/404/404desktoplh.png)
-
-**Chrome lighthouse mobile**
-
-![Screencap signup.html lighthouse mobile](./assets/images/readme/lighthouse/404/404mobilelh.png)
 
 ## Deployment
 Used GitHub Pages to bring the site to life [View The Site Here](https://danger0101.github.io/JavaScript-Quiz-PP2/index.html)
