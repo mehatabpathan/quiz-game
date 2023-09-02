@@ -33,7 +33,7 @@ div.container.fade {
 
 @media (min-width:768px) {
     .container img {
-        max-width: 240px;
+        max-width: 650px;
         max-height: 240px;
     }
 }
@@ -294,23 +294,23 @@ body {
     background: #087c4d;
 }
 
-/* quiz box div */
-.quiz_box div{
+/* quiz box section */
+.quiz_box section{
     padding: 25px 30px 20px 30px;
     background: lightyellow;
 }
 
-.quiz_box div .que_text{
+.quiz_box section .que_text{
     font-size: 25px;
     font-weight: 600;
 }
 
-.quiz_box div .option_list{
+.quiz_box section .option_list{
     padding: 20px 0px;
     display: block;
 }
 
-div .option_list .option{
+section .option_list .option{
     background: #F0F0F0;
     border: 1px solid #cedfee;
     border-radius: 5px;
@@ -324,7 +324,7 @@ div .option_list .option{
     transition: all 0.3s ease;
 }
 
-div .option_list .option:hover{
+section .option_list .option:hover{
     color: #004085;
     background: #cce5ff;
     border: 1px solid #b8daff;
