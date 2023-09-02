@@ -145,12 +145,9 @@ All Scripts checked with [JSHint](https://jshint.com/)
 
 | **Sctipt** | **Any Errors?** | **Warnings?** | Other note worthy comments |
 |:----------:|:---------------:|:-------------:|:--------------------------:|
-| index.js | No Errors | 5 Warnings all to do with compatibility | None |
-| quiz.js | No Errors | 43 Warnings all to do with compatibility | None |
-| end.js | No Errors | 11 Warnings all to do with compatibility | Save highscore varriable isnt used in script but is on end.html save button press |
-| highscore.js | No Errors | 6 Warnings all to do with compatibility | None |
-| error.js | No Errors | 2 Warnings all to do with compatibility | None |
-
+| script.js | No Errors | 5 Warnings all to do with compatibility | None |
+| jsquestions.js | No Errors | no warnings| None |
+| htmlcssquestions.js | No Errors | no warnings| None |
 ### Index.html
 **Chrome lighthouse desktop**
 
