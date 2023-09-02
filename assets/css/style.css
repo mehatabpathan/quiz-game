@@ -294,23 +294,23 @@ body {
     background: #087c4d;
 }
 
-/* quiz box section */
-.quiz_box section{
+/* quiz box div */
+.quiz_box div{
     padding: 25px 30px 20px 30px;
     background: lightyellow;
 }
 
-.quiz_box section .que_text{
+.quiz_box div .que_text{
     font-size: 25px;
     font-weight: 600;
 }
 
-.quiz_box section .option_list{
+.quiz_box div .option_list{
     padding: 20px 0px;
     display: block;
 }
 
-section .option_list .option{
+div .option_list .option{
     background: #F0F0F0;
     border: 1px solid #cedfee;
     border-radius: 5px;
@@ -324,7 +324,7 @@ section .option_list .option{
     transition: all 0.3s ease;
 }
 
-section .option_list .option:hover{
+div .option_list .option:hover{
     color: #004085;
     background: #cce5ff;
     border: 1px solid #b8daff;
