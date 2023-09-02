@@ -17,12 +17,11 @@ start_btn.forEach(button => {
     button.addEventListener('click', () => {
         container[0].style.opacity = "0";   
     var jsbool = button.classList.contains("js");
-    
+    info_box.classList.add("activeInfo");  //show the info_box
+
     if(jsbool){
-        info_box.classList.add("activeInfo");  //show the info_box
         questions = jsquestions;
     }else{
-        info_box.classList.add("activeInfo"); //show the info_box
         questions = htmlcssquestions;
     }
     });
