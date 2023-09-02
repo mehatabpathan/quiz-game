@@ -3,24 +3,14 @@
 Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed to test your knowledge of core JavaScript and HTML/CSS concepts, syntax, and best practices. Whether you're a beginner looking to reinforce your understanding or an experienced developer seeking to sharpen your skills, this quiz offers a range of questions to challenge your JavaScript and HTML/CSS expertise.
 
 ## User Stories
-- As a user, I want to be able to start the quiz and see the first question.
-- As a user, I want to see a progress indicator showing the current question number out of the total questions.
-- As a user, I want to see a score indicator showing my current score during the quiz.
-- As a user, I want to see multiple choice options for each question.
-- As a user, I want to select an answer and see if it's correct or incorrect.
-- As a user, I want to see my score updated if my answer is correct.
-- As a user, I want to move to the next question automatically after answering a question.
-- As a user, I want to see the quiz end after answering all questions or reaching a maximum number of questions.
-- As a user, I want to see my final score at the end of the quiz.
-- As a user, I want to have the option to restart the quiz after finishing it.
-- As a user, I want to see a leaderboard with the top scores.
-- As a user, I want to have the choice to submit my score and a username to the leaderboard.
-- As a user, I want to see the top five scores on the leaderboard.
-- As a user, I want to be able to go back to the main menu from the leaderboard.
-- As a user, I want to be able to go back to the main menu from the quiz.
-- As a user, I want to be able to go back to the main menu from a 404 error screen should it arise.
-- As a user, I want to be able to see how to play before starting.
-- As a user, I want to be able to check out the author.
+- As a user, I can track my quiz progress and see my scores over time.
+- As a user, I want to browse and select quizzes by category so that I can choose quizzes that match my interests or skill level.
+- As a user, I want to see a list of available questions in a quiz so that I can prepare and understand the scope of the quiz.
+- As a user,  I can answer questions and test my knowledge.
+- As a user, I want to answer multiple-choice questions so that I can provide my answers for evaluation.
+- As a user, I want to see my progress within the quiz so that I can gauge how much is left and manage my time effectively.
+- As a user, I want to review and change my answers before submitting the quiz so that I can make sure I've answered to the best of my ability.
+- As a user, I want to receive immediate feedback on my answers so that I can understand which questions I answered correctly and incorrectly.
 
 ## Features
 ### Index Page
