@@ -120,7 +120,7 @@ All Scripts checked with [JSHint](https://jshint.com/)
 ### Light House
 
 
-![lighthouse ](./assets/images/lighthousess.png)
+![lighthouse ](assets/images/lighthousess.png)
 
 
 ## Deployment
@@ -140,20 +140,18 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 - [ui.dev Am I Responsive](https://ui.dev/amiresponsive)
 
 ## Wireframes
-### Index.html
-![index.html wireframe](./assets/images/readme/wireframes/indexwireframe.png)
+### Start Page
+![Start page wireframe](assets/images/startpagewf.png)
 
-### Quiz.html
-![quiz.html wireframe](./assets/images/readme/wireframes/quizwireframe.png)
+### Set of Rules
+![Set of Rules wireframe](assets/images/ruleswf.png)
 
-### End.html
-![end.html wireframe](./assets/images/readme/wireframes/endwireframe.png)
+### Quiz Box
+![Quiz Box wireframe](assets/images/quizboxwf.png)
 
-### Leaderboard.html
-![leaderboard.html wireframe](./assets/images/readme/wireframes/leaderboardwireframe.png)
+### Score Card
+![Score Card wireframe](assets/images/scorecardwf.png)
 
-### 404.html
-![404.html wireframe](./assets/images/readme/wireframes/404wireframe.png)
 
 ## Credits
 **Code related**
