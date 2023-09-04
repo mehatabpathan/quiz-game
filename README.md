@@ -141,16 +141,16 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 
 ## Wireframes
 ### Start Page
-[Start page wireframe](assets/images/startpagewf.png "view start page wire frame")
+[Start page wireframe](assets/images/startpagewf.png "view Start Page wire frame")
 
 ### Set of Rules
-![Set of Rules wireframe](assets/images/ruleswf.png)
+[Set of Rules wireframe](assets/images/ruleswf.png "view Set of Rules wire frame")
 
 ### Quiz Box
-![Quiz Box wireframe](assets/images/quizboxwf.png)
+[Quiz Box wireframe](assets/images/quizboxwf.png " view Quiz Box wire frame")
 
 ### Score Card
-![Score Card wireframe](assets/images/scorecardwf.png)
+![Score Card wireframe](assets/images/scorecardwf.png "view Score Card wire frame")
 
 
 ## Credits
