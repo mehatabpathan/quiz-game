@@ -24,13 +24,13 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - As a user, I want to receive immediate feedback on my answers so that I can understand which questions I answered correctly and incorrectly.
 
 ## Features
-### Index Page
+### Start Page
 
-Landing page of JavaScript Showdown. It displays a play button when pressed that starts the quiz. Also visible is a leaderboard button which will take you to the leaderboard page.
+Landing page of Programming Quiz. It displays two start button with javascript and html/css when pressed that start showing the rules box if we press continue it will take us to quiz box once we are done with quiz it will display the score card.
 
-![Index Page](./assets/images/readme/features/index.png)
+![Start page](assets/images/startpage.png)
 
-#### How To Play
+#### Set Of Rules
 
 ![How To Play](./assets/images/readme/features/howtoplay.png)
 ---
