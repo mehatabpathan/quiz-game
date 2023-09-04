@@ -84,21 +84,21 @@ This shows the result of the score.
 
 ## Validation testing
 ### CSS
-- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator) No CSS issues
+- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator "css jiqsaw validation") No CSS issues
 
-![W3 CSS Validation Image](./assets/images/cssvalidationss.png)
+[W3 CSS Validation Image](./assets/images/cssvalidationss.png "css validation")
 
 ### HTML
-- checked with [W3 HTML Validator](/assets/images/htmlvalidationss.png) No HTML validation issues found
+- checked with [W3 HTML Validator](/assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
 **Script.js**
-![W3 HTML Validation Image Index Page](assets/images/script.js%20validationss.png)
+[W3 HTML Validation Image Index Page](assets/images/script.js%20validationss.png "script.js")
 
 **jsquestions.js**
-![W3 HTML Validation Image Quiz Page](assets/images/jsquestionvalidationss.png)
+[W3 HTML Validation Image Quiz Page](assets/images/jsquestionvalidationss.png "jsquestions")
 
 **htmlcssquestions.js**
-![W3 HTML Validation Image End Page](assets/images/htmlcssqvaliss.png)
+[W3 HTML Validation Image End Page](assets/images/htmlcssqvaliss.png "html/css questions")
 
 
 ### Contrast
@@ -120,7 +120,7 @@ All Scripts checked with [JSHint](https://jshint.com/)
 ### Light House
 
 
-![lighthouse ](assets/images/lighthousess.png)
+[lighthouse ](assets/images/lighthousess.png "view light house")
 
 
 ## Deployment
@@ -150,7 +150,7 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 [Quiz Box wireframe](assets/images/quizboxwf.png " view Quiz Box wire frame")
 
 ### Score Card
-![Score Card wireframe](assets/images/scorecardwf.png "view Score Card wire frame")
+[Score Card wireframe](assets/images/scorecardwf.png "view Score Card wire frame")
 
 
 ## Credits
