@@ -141,7 +141,7 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 
 ## Wireframes
 ### Start Page
-![Start page wireframe](assets/images/startpagewf.png)
+[Start page wireframe](assets/images/startpagewf.png "view start page wire frame")
 
 ### Set of Rules
 ![Set of Rules wireframe](assets/images/ruleswf.png)
