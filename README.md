@@ -103,9 +103,9 @@ This shows the result of the score.
 
 ### Contrast
 - Checked all pages with [A11Y contrast checker](https://color.a11y.com/) Any contrast issues?
-- The contrast checker has issues checking based on the link its  self colors needed to input manually.
+- No automated color contrast issues found on the webpage tested
 
-![Contrast checker Image](./assets/images/readme/contrast/colorcontrasttest.png)
+![Contrast checker Image](assets/images/contrastcolor.png)
 
 ### JavaScript
 
