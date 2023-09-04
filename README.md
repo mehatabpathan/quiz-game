@@ -2,6 +2,17 @@
 
 Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed to test your knowledge of core JavaScript and HTML/CSS concepts, syntax, and best practices. Whether you're a beginner looking to reinforce your understanding or an experienced developer seeking to sharpen your skills, this quiz offers a range of questions to challenge your JavaScript and HTML/CSS expertise.
 
+![Programming Quiz Responive website](assets/images/responsive.png)
+
+[View Shoppers Stop Github pages](https://github.com/mehatabpathan/quiz-game "View shoppers stop Github pages")
+
+[View shoppers Stop Live Website](https://mehatabpathan.github.io/quiz-game/ "View Shoppers stop Live Website")
+
+![Static Badge](https://img.shields.io/badge/Last_Commit-September-red)
+![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
+![Static Badge](https://img.shields.io/badge/Languages-3-greens)
+
+
 ## User Stories
 - As a user, I can track my quiz progress and see my scores over time.
 - As a user, I want to browse and select quizzes by category so that I can choose quizzes that match my interests or skill level.
@@ -116,12 +127,12 @@ Footer with social links to the author that open in new tabs.
 
 ## Validation testing
 ### CSS
-- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) No CSS issues
+- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator) No CSS issues
 
 ![W3 CSS Validation Image](./assets/images/cssvalidationss.png)
 
 ### HTML
-- checked with [W3 HTML Validator](./assets/images/htmlvalidationss.png) No HTML validation issues found
+- checked with [W3 HTML Validator](/assets/images/htmlvalidationss.png) No HTML validation issues found
 
 **Script.js**
 ![W3 HTML Validation Image Index Page](assets/images/script.js%20validationss.png)
@@ -156,7 +167,7 @@ All Scripts checked with [JSHint](https://jshint.com/)
 
 
 ## Deployment
-Used GitHub Pages to bring the site to life [View The Site Here](https://danger0101.github.io/JavaScript-Quiz-PP2/index.html)
+Used GitHub Pages to bring the site to life [View The Site Here](https://mehatabpathan.github.io/quiz-game/)
 
 ## Technology used
 - [HTML](https://www.w3schools.com/html/default.asp)
@@ -165,11 +176,8 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://danger0
 - [Json](https://www.w3schools.com/js/js_json_intro.asp)
 - [Fontawesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [Visual Studios Code (VSCode)](https://visualstudio.microsoft.com/)
 - [Github](https://github.com/)
-- [Hypervisor (virtual enviorment)](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)
 - [Git](https://git-scm.com/)
-- [Gyazo](https://gyazo.com/en)
 - [MS Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H)
 - [Github Desktop App](https://desktop.github.com/)
 - [ui.dev Am I Responsive](https://ui.dev/amiresponsive)
@@ -194,31 +202,9 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://danger0
 **Code related**
 - [My project one](https://github.com/Danger0101/Meaningful_Careers_P1) for structure of this reademe file
 
-- My previous assessor for ideas on the readme file and the footer issues PP1 had. Sorry do to the nature of assessing I have no idea who you are but thank you for the invaluable advice.
-
 **Other Notible Mentions**
 - [W3Schools](https://www.w3schools.com/) for inspiration on the loading CSS for use on quiz page and to find out uses for all type of varriables and inspiration to the questions. Invaluable tool so much knowledge for freee its crazy.
 
 - [My wife](https://www.twitch.tv/flame_121) who’s been supper supportive of this change in career for me and just being out right amazing we will get her into this one way or another I am sure.
 
 - [Code Institute](https://codeinstitute.net/) for providing an excellent accelerated learning platform worth every penny.
----
-## Future feature ideas
-| **Features to add** | **Added Y(yes)/N(no)** | **Why not added?** |
-|:-------------------:|:--------------------:|:-------:|
-| Pages for the menu, leaderboard, quiz, and end page | Y | N/A |
-| Fifteen Quiz questions to start | Y | N/A |
-| HUD to show score and question progress | Y | N/A |
-| Leaderboard which uses local storage (svae/load) | Y | N/A |
-| Loader to display whil quiz loads up | Y | N/A |
-| Footer with author links | Y | N/A |
-| Add more questions to aproximatly 40+ | Y | N/A |
-| How to play button that opens a div on how to play the quiz | Y | N/A |
-| Add no JavaScript Error text | Y | N/A |
-| Remove hover effect on mobile/touch devices where there is no active cursor to hover | Y | N/A |
-| Add a difficulty picker | N | One of the two ways I might take it in the future |
-| Maybe instead of difficulty checker having option to choose othe coding language quiz's | N |  One of the two ways I might take it in the future |
-| Backend database for score keeping | N | Will be added in the future when I have a good idea how to do it although I couldn't find a reliable way to make it work through github pages |
-| Seperate leaderboards based on difficulty or based on quiz type | N | Will be implemented at the time these features go live |
-| Add more questions to total 100+ | N | Was looing to continue it further in the future although I feel 40+ is sufficient for the time being |
-| Swap leaderboard to a table instead of a list although for now its as intended  | N | When difficulty or other quiz types are added this is the planed route and I will make it so you can switch between the leaderboards as well. Only one will show at a time. |
