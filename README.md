@@ -32,62 +32,19 @@ Landing page of Programming Quiz. It displays two start button with javascript a
 
 #### Set Of Rules
 
-![How To Play](./assets/images/readme/features/howtoplay.png)
+![Set Of Rules](assets/images/Rulesbox.png)
 ---
-### Quiz Page
+### Quiz Box
 
-This page starts with a loading animation which will be hidden when the quiz has fully loaded. From here a user will select an answer and it will highlight red if it is wrong or green if its correct and after 1 second it will load the next question. There is a HUD that will diplay the score and current question with a progress bar. After the final question it will take you to the end page.
+If we press javascript questions it shows javascript quiz else it shows html/css questions .It shows all the question from 1 to 10 .
 
-![Quiz Page](./assets/images/readme/features/quiz.png)
+![Quiz Box](assets/images/Quizbox.png)
 
-#### Loader
-This appears while quiz loads then disapears.
+#### Score Card
+This shows the result of the score.
 
-![Loader](./assets/images/readme/features/loader.png)
-#### Correct Answer
+![Score Crad](assets/images/scorecard.png)
 
-![Correct Highlight](./assets/images/readme/features/correct.png)
-
-#### Incorrect Answer
-
-![Incorrect Highlight](./assets/images/readme/features/incorrect.png)
----
-### End Page
-
-The page will load and display your score, allowing you to save it to the leaderboard.
-
-![End Page](./assets/images/readme/features/end.png)
----
-### Leaderboard Page
-
-This page will display the leaderboard data upon loading.
-
-![Leaderboard Page](./assets/images/readme/features/lead.png)
----
-### 404 Page
-
-This page will display an error message relating to error 404 page not found with a link back to indext.html
-
-![404 Page](./assets/images/readme/features/404.png)
----
-### No JavaScript
-
-This will appear if the browser doesn't support JavaScript or if the user has disabled it
-
-![No Java Script Warning](./assets/images/readme/features/nojs.png)
----
-### Please Rotate
-
-This message appears when users have their mobile devices in landscape mode, though it may not cover all devices.
-
-![Please Rotate](./assets/images/readme/features/rotate.png)
----
-### Footer
-
-Footer with social links to the author that open in new tabs.
-
-![Author Social Links Footer](./assets/images/readme/features/footer.png)
----
 ## Testing
 ### How I tested
 | What test was completed | Passed? Y(yes)/N(no) |
