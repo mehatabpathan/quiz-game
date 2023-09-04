@@ -107,6 +107,36 @@ This shows the result of the score.
 
 ![Contrast checker Image](assets/images/contrastcolor.png)
 
+#### Browser Testing
+
+The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+
+#### Device Testing
+
+The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+
+I also used the following websites to test responsiveness:
+
+http://www.responsinator.com/?url=https%3A%2F%2Fmehatabpathan.github.io%2Fquiz-game%2F
+
+https://ui.dev/amiresponsive?url=https://mehatabpathan.github.io/quiz-game/
+
+#### Friends and Family User Testing
+
+Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+## Bugs
+
+- After deploying the website I found out that the images were broken in the gallery page. This was due to absolute file paths. I fixed it by removing the initial slash and making the file paths relative.
+- In the deployed version, the background images for the rules and get in Register page were not covering the whole section on tablets and larger screens. I fixed it by adding a height property to the sections affected.
+- All font-awesome icons are loaded in svg format as font-awsome-kit is reducing the performance of the website
+
+## Unsolved Bugs
+
+- None.
+
+
+
 ### JavaScript
 
 All Scripts checked with [JSHint](https://jshint.com/)
@@ -123,6 +153,7 @@ All Scripts checked with [JSHint](https://jshint.com/)
 [lighthouse ](assets/images/lighthousess.png "view light house")
 
 
+
 ## Deployment
 Used GitHub Pages to bring the site to life [View The Site Here](https://mehatabpathan.github.io/quiz-game/)
 
@@ -130,7 +161,6 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://www.w3schools.com/js/default.asp)
-- [Json](https://www.w3schools.com/js/js_json_intro.asp)
 - [Fontawesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Github](https://github.com/)
@@ -154,12 +184,31 @@ Used GitHub Pages to bring the site to life [View The Site Here](https://mehatab
 
 
 ## Credits
-**Code related**
-- [My project one](https://github.com/Danger0101/Meaningful_Careers_P1) for structure of this reademe file
+
+### Content
+
+All information provided was written by myself.
+
+### Acknowledgments
+
+I'd like to acknowledge the following people for helping me build this website.
+
+- For my mentor, AntonioRodriquez for guiding me and helping me to improve elements of the site to make it more user friendly.
+- For my tutor, Ed who helped me in the GitHub issue.
+- for my Facilitator, Marko Tot who guided me with all the presentations that helped me to finish this project.
+
+I used this presentation to improve my Readme
+
+<https://docs.google.com/presentation/d/19_7r_To5bu7UjnZD87hrzWQi63Ij0YpaRH1XFnPZZe8/edit#slide=id.g1551aff15c5_1_0>
+
+I used this mark up cheat sheet that I found on the slack community for clear guidance on how to create layouts for this readme file:
+
+<https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md>
+
+Shields.io badges were created for readme.md file using the markup code from:
+<https://shields.io/badges>
 
 **Other Notible Mentions**
-- [W3Schools](https://www.w3schools.com/) for inspiration on the loading CSS for use on quiz page and to find out uses for all type of varriables and inspiration to the questions. Invaluable tool so much knowledge for freee its crazy.
-
-- [My wife](https://www.twitch.tv/flame_121) who’s been supper supportive of this change in career for me and just being out right amazing we will get her into this one way or another I am sure.
+- [W3Schools](https://www.w3schools.com/) for inspiration on the loading CSS for use on quiz page and to find out uses for all type of varriables and inspiration to the questions. Invaluable tool so much knowledge for free its crazy.
 
 - [Code Institute](https://codeinstitute.net/) for providing an excellent accelerated learning platform worth every penny.
