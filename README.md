@@ -47,9 +47,9 @@ This shows the result of the score.
 
 ### Colour Scheme
 
-![Website Colour Scheme](assets/images/coolors.png)
+[Website Colour Scheme](assets/images/coolors.png "coolors image")
 
-The website uses bright and light colours using HEX numbers for more variety, such as the header section (1 opacity) with this I later decided that some text was not clear enough with the opacity from the navigation bar which needed to be clear to viewers at all times, but I didn't want to change the colour scheme, so instead simply set the opacity to 1 instead of 0.8.  I chose this palette to keep the website fun and vibrant so it stands out and attracts potential clients. The #000000 black will be used for text, as well as #ffffff white for coloured background sections such as the banner image text and the i kept #000000 color for hamberger icon and text and #F0EC57 color for the background image and for the footer i kept orange color to highlight the website. The colour palette was created using the Coolors website.
+The website uses bright and light colours using color gradient for more variety.Background image I used #03F2ED color and for buttons #087C4D is used.
 
 
 
