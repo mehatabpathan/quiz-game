@@ -128,7 +128,7 @@ body {
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
-    z-index: 5;
+    z-index: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%);
 }
@@ -155,6 +155,8 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    background: rgb(210,253,255);
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
 .info_box .info_title{
@@ -209,7 +211,7 @@ body {
 
 .buttons button.restart{
     color: #fff;
-    background: #087c4d;
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
 .buttons button.restart:hover{
@@ -235,6 +237,7 @@ body {
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
     transition: all 0.3s ease;
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
 /* quiz box header */
@@ -249,6 +252,7 @@ body {
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    background: rgb(210,253,255);
 }
 
 .quiz_box header .title{
@@ -300,7 +304,8 @@ body {
 /* quiz box section */
 .quiz_box section{
     padding: 25px 30px 20px 30px;
-    background: lightyellow;
+    background: rgb(210,253,255);
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
 .quiz_box section .que_text{
@@ -386,6 +391,8 @@ section .option_list .option:hover{
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid lightgrey;
+    background: rgb(210,253,255);
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
 .quiz_box footer .total_que span{
