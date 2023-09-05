@@ -49,9 +49,7 @@ This shows the result of the score.
 
 [Website Colour Scheme](assets/images/coolors.png "coolors image")
 
-The website uses bright and light colours using color gradient for more variety.Background image I used #03F2ED color and for buttons #087C4D is used.
-
-
+The website uses bright and light colours using color gradient for more variety.Background image I used #03F2ED color and for buttons #087C4D is used.with opacity 1 and z-index is 1.
 
 ## Testing
 ### How I tested
@@ -94,10 +92,10 @@ The website uses bright and light colours using color gradient for more variety.
 ### CSS
 - checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator "css jiqsaw validation") No CSS issues
 
-[W3 CSS Validation Image](./assets/images/cssvalidationss.png "css validation")
+[W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation")
 
 ### HTML
-- checked with [W3 HTML Validator](/assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
+- checked with [W3 HTML Validator](assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
 **Script.js**
 - checked with[JShint script.js](assets/images/script.js%20validationss.png "script.js")
