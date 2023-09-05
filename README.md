@@ -69,9 +69,9 @@ This shows the result of the score.
 
 | Bugs/Issues Encountered          | How problem was fixed                               | Fixed Y(yes)/N(no) |
 |:--------------------------------:|:---------------------------------------------------:|:------------------:|
-| Play button was not loading quiz | was a missing bracket that was deleted accidentally | Y |
-| Questions Were Not Displaying | Was a typo in json file name in script.js | Y |
-| Mobile device landscape not displaying as intended. Author links and title appear in odd fashion on certian resolutions | Ongoing issue tried diffrent css finally found one that works although going to keep my script for the set resolutions to rotate back as it is best experiance. still | Y |
+| Selected question string comparing was failing due to special chareters | Used element.textContent insted of Text | Y |
+| Questions Were Not Displaying | Was a typo in  file name in script.js | Y |
+| When deployed in github, images were not displaying | Was due to / infrom of image src path, removed it | Y |
 | Author Links appearing underneath other elements at certain resolutions | Removed Z index | Y |
 | How to div was displaying upon load | Added hidden class to it to hide it on load | Y |
 | Responsive css attempt of landscape mode set everything in an od skew to left | Removed the css that caused issue | Y |
@@ -128,7 +128,7 @@ Friends and family members were asked to review the site and documentation to po
 ## Bugs
 
 - After deploying the website I found out that the images were broken in the gallery page. This was due to absolute file paths. I fixed it by removing the initial slash and making the file paths relative.
-- In the deployed version, the background images for the rules and get in Register page were not covering the whole section on tablets and larger screens. I fixed it by adding a height property to the sections affected.
+- In the deployed version, the background images for the rules and get were not covering the whole section on tablets and larger screens. I fixed it by adding a height property to the sections affected.
 - All font-awesome icons are loaded in svg format as font-awsome-kit is reducing the performance of the website
 
 ## Unsolved Bugs
