@@ -100,13 +100,13 @@ The website uses bright and light colours using color gradient for more variety.
 - checked with [W3 HTML Validator](/assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
 **Script.js**
-[W3 HTML Validation Image Index Page](assets/images/script.js%20validationss.png "script.js")
+- checked with[JShint script.js](assets/images/script.js%20validationss.png "script.js")
 
 **jsquestions.js**
-[W3 HTML Validation Image Quiz Page](assets/images/jsquestionvalidationss.png "jsquestions")
+-checked with[JShint javascript questions](assets/images/jsquestionvalidationss.png "jsquestions")
 
 **htmlcssquestions.js**
-[W3 HTML Validation Image End Page](assets/images/htmlcssqvaliss.png "html/css questions")
+-checked with[JShint html/css questions](assets/images/htmlcssqvaliss.png "html/css questions")
 
 
 ### Contrast
@@ -164,6 +164,25 @@ All Scripts checked with [JSHint](https://jshint.com/)
 
 ## Deployment
 Used GitHub Pages to bring the site to life [View The Site Here](https://mehatabpathan.github.io/quiz-game/)
+
+### Local Development
+
+#### How To Fork
+
+To fork the depository:
+
+1. Log in or sign up to <https://github.com/>
+2. Go to the repository for this project https://github.com/mehatabpathan/quiz-game
+3. Click the fork button in the top right corner
+
+#### How To Clone
+
+1. Log in or sign up to <https://github.com/>
+2. Go to the repository for this project https://github.com/mehatabpathan/quiz-game
+3. Click the code button, select whether you'd like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'Git Clone' into the terminal and then paste the link you copied in step 3. Press Enter.
+
 
 ## Technology used
 - [HTML](https://www.w3schools.com/html/default.asp)
