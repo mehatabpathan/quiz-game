@@ -39,10 +39,10 @@ let htmlcssquestions = [
     {
         numb: 4,
         question: "What is the correct HTML tag for inserting a line break?",
-        answer: " br /",
+        answer: "br/",
         options: [
               "break /",
-              "br /",
+              "br/",
               "lb /",
               "br /br"
              ]

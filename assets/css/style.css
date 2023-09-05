@@ -441,6 +441,8 @@ footer button:hover{
     opacity: 0; 
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
+
 }
 
 .result_box .icon{
