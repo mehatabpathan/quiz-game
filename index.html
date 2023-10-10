@@ -11,6 +11,17 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-css-quiz.html">HTML/CSS Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </ul>
+    </nav>
 
     <div class="container">
         <h1>Programming Quiz</h1>
@@ -32,7 +43,7 @@
     <!--Info box-->
     <div class="info_box">
         <div class="info_title">
-            <span>Some Rules of this Quiz:</span>
+            <span>Some Rules of this Quiz</span>
         </div>
         <div class="info_list">
             <div class="info">1. You will have only <span>20 seconds </span> per each question.</div>
@@ -44,6 +55,29 @@
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
             <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="user_box">
+        <div class="info_title">
+            <span>Please Enter Your Information</span>
+        </div>
+        <div class="info_list">
+
+            <div class="info">
+                <label> Name: </label>
+                <input class="option user_name" type="text">
+
+            </div>
+            <div class="info">
+                <label> Email: </label>
+                <input class="option user_email" type="email">
+            </div>
+        
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="start">Start</button>
         </div>
     </div>
 
@@ -85,7 +119,7 @@
             <div class="total_que">
                 <span>2 Of 10 Questions</span>
             </div>
-           <button class="next_btn" style="display:none"> Click Next </button>
+           <button class="next_btn"> Click Next </button>
         </footer> 
     </div>
 
@@ -102,8 +136,9 @@
         </div>
         <div class="buttons">
             <button class="restart">Replay</button>
-            <button class="quit">Quit</button>
+            <button class="quit" onclick="sendEmail()">Quit</button>
         </div>
+    </div>
     </div>
 
     <!--Inside this JavaScript file I've inserted Questions and Options only-->
@@ -115,5 +150,9 @@
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("UOe2Low0qTXYUslK1"); // Replace "your_service_id" with your EmailJS service ID
+    </script>
 </body>
 </html>

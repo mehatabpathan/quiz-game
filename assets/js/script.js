@@ -2,8 +2,11 @@
 //selecting all required elements
 const start_btn = document.querySelectorAll(".start_btn button");
 const info_box = document.querySelector(".info_box");
+const user_box = document.querySelector(".user_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
+const exit_quiz_btn = user_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
+const start_quiz_btn = user_box.querySelector(".buttons .start");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
@@ -33,16 +36,38 @@ start_btn.forEach(button => {
 exit_btn.onclick = ()=>{
     container[0].style.opacity = "1";
     info_box.classList.remove("activeInfo"); //hide the info box
+    user_box.classList.remove("activeQuiz"); 
+};
+
+exit_quiz_btn.onclick = ()=>{
+    container[0].style.opacity = "1";
+    info_box.classList.remove("activeInfo"); //hide the info box
+    user_box.classList.remove("activeQuiz"); 
 };
 
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
-    quiz_box.classList.add("activeQuiz"); //show the quiz box
-    showQuestions(0); //calling showQuestions function
-    queCounter(1); //passing 1 parameter to queCounter
-    startTimer(20); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
+    user_box.classList.add("activeQuiz"); 
+};
+
+start_quiz_btn.onclick = ()=>{
+    
+    //get user name and email
+    user_name = user_box.querySelector(".input .user_name").innerHTML;
+    user_email = user_box.querySelector(".input .user_email").innerHTML;
+
+    if (user_name && user_email) {
+        user_box.classList.remove("activeQuiz"); 
+        quiz_box.classList.add("activeQuiz"); //show the quiz box
+        showQuestions(0); //calling showQuestions function
+        queCounter(1); //passing 1 parameter to queCounter
+        startTimer(20); //calling startTimer function
+        startTimerLine(0); //calling startTimerLine function
+    } else {
+        
+    }
+
 };
 
 let timeValue = 20;
@@ -52,6 +77,8 @@ let userScore = 0;
 let counter;
 let counterLine;
 let widthValue = 0;
+let user_name = 'Mehatab';
+let user_email = 'mehatab.pathan231@gmail.com';
 
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
@@ -239,3 +266,19 @@ function queCounter(index){
     let totalQueCountTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCountTag; //adding new span tag inside the bottom_ques_counter
 }
+function sendEmail() {
+    var templateParams = {
+        to_email: user_email,
+        to_name: user_name, 
+        quiz_score: userScore, 
+    };
+
+    emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1')
+        .then(function(response) {
+            console.log('Email sent successfully', response);
+        })
+        .catch(function(error) {
+            console.error('Email sending failed', error);
+        });
+}
+

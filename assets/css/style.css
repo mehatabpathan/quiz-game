@@ -15,9 +15,9 @@
 
 div.container {
     opacity:1;
-    -webkit-transition: opacity 3s;
-    -moz-transition: opacity 3s;     
-    transition: opacity 3s; 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;     
+    transition: opacity 1s; 
 }
     
 div.container.fade {
@@ -95,7 +95,7 @@ body {
     border: 1px solid #ccc;
     margin-right: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.1s cubic-bezier(.25,.8,.25,1);
   border-radius: 5px;
 }
 
@@ -109,6 +109,7 @@ body {
 }
 
 .info_box,
+.user_box,
 .quiz_box,
 .result_box{
     position: absolute;
@@ -125,7 +126,9 @@ body {
 }
 
 .info_box.activeInfo,
+.user_box.activeInfo,
 .quiz_box.activeQuiz,
+.user_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
     z-index: 1;
@@ -147,6 +150,7 @@ body {
 }
 
 /* info_box */
+.user_box, 
 .info_box{
     max-width: 80vw;
     background: lightyellow;
@@ -154,11 +158,12 @@ body {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     background: rgb(210,253,255);
     background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
+.user_box .info_title, 
 .info_box .info_title{
     height: 60px;
     width: 100%;
@@ -171,21 +176,25 @@ body {
     font-weight: 700;
 }
 
+.user_box .info_list, 
 .info_box .info_list{
     padding: 15px 30px;
 }
 
+.user_box .info_list .info,
 .info_box .info_list .info{
     margin: 5px 0;
     font-size: 17px;
 }
 
+.user_box .info_list .info span,
 .info_box .info_list .info span{
     font-weight: 600;
     color: #007bff;
 }
 
 /* Info box buttons */
+.user_box .buttons,
 .info_box .buttons{
     height: 60px;
     display: flex;
@@ -195,6 +204,7 @@ body {
     border-top: 1px solid lightgrey;
 }
 
+.user_box .buttons button, 
 .info_box .buttons button{
     margin: 0 5px;
     height: 40px;
@@ -206,19 +216,19 @@ body {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #087c4d;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
-.buttons button.restart{
+.buttons button.restart button.start{
     color: #fff;
     background: #087c4d;
 }
 
-.buttons button.restart:hover{
+.buttons button.restart:hover button.start:hover{
     background: #087c4d;
 }
 
-.buttons button.quit{
+.buttons button.quit button.restart button.start{
     color: #087c4d;
     border-color: #087c4d;
 }
@@ -236,7 +246,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
@@ -329,7 +339,7 @@ section .option_list .option{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 section .option_list .option:hover{
@@ -340,6 +350,31 @@ section .option_list .option:hover{
 
 .option_list .option:last-child{
     margin-bottom: 0px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700; /* Change the color on hover */
 }
 
 /* option list icons */
@@ -420,7 +455,7 @@ footer button{
     background: #087c4d;
     border: 1px solid #007bff;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 footer button:hover{
@@ -482,7 +517,7 @@ footer button:hover{
     border-radius: 5px;
     border: 1px solid #007bff;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     overflow: hidden;
 }
 /* Media queries */
