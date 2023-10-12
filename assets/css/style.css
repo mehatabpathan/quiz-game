@@ -238,6 +238,17 @@ body {
     background: #087c4d;
 }
 
+/*user-name and user_email*/
+.user_name ,
+.user_email{
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
 /* quiz_box */
 .quiz_box{
     width: 550px;

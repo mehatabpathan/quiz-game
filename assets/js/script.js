@@ -54,8 +54,8 @@ continue_btn.onclick = ()=>{
 start_quiz_btn.onclick = ()=>{
     
     //get user name and email
-    user_name = user_box.querySelector(".input .user_name").innerHTML;
-    user_email = user_box.querySelector(".input .user_email").innerHTML;
+    user_name = user_box.querySelector(".user_name").value;
+    user_email = user_box.querySelector(".user_email").value;
 
     if (user_name && user_email) {
         user_box.classList.remove("activeQuiz"); 
@@ -193,6 +193,11 @@ function optionSelected(answer){
     
     
 } 
+// Assuming userScore contains the calculated score
+userScore = 5;  // You would calculate this score based on user's performance in the quiz
+
+// Update the content of the span element with id "user-score"
+document.getElementById("user-score").textContent = userScore;
 
 
 // function showResult
