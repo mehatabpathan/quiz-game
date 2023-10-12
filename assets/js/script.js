@@ -106,6 +106,7 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     container[0].style.opacity = "1";
     window.location.reload();
+    
 };
 
 const next_btn = document.querySelector("footer .next_btn");
@@ -192,16 +193,12 @@ function optionSelected(answer){
     }, 2000);
     
     
-} 
-// Assuming userScore contains the calculated score
-userScore = 5;  // You would calculate this score based on user's performance in the quiz
-
-// Update the content of the span element with id "user-score"
-document.getElementById("user-score").textContent = userScore;
+}
 
 
 // function showResult
 function showResult(){
+    sendEmail();
     info_box.classList.remove("activeInfo");  //hide the info box
     quiz_box.classList.remove("activeQuiz");  //hide the quiz box
     result_box.classList.add("activeResult");  //show the result box
@@ -283,6 +280,7 @@ function sendEmail() {
             console.log('Email sent successfully', response);
         })
         .catch(function(error) {
+            
             console.error('Email sending failed', error);
         });
 }
