@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
-//selecting all required elements
+
+// Selecting all required elements
 const start_btn = document.querySelectorAll(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const user_box = document.querySelector(".user_box");
@@ -42,8 +43,6 @@ confirmNoButton.addEventListener('click', () => {
     // Add your code for staying on the quiz or any other action.
 });
 
-
-
 let exitQuiz = false; // A flag to check if the user wants to exit the quiz
 
 // Add event listeners to your anchor tags (e.g., Home, JavaScript Quiz)
@@ -74,69 +73,63 @@ anchorTags.forEach((anchor) => {
   });
 });
 
-
-
-//If StartQuiz Button clicked
+// If StartQuiz Button clicked
 start_btn.forEach(button => {
     button.addEventListener('click', () => {
         container[0].style.opacity = "0";   
-    var jsbool = button.classList.contains("js");
-    info_box.classList.add("activeInfo");  //show the info_box
+        var jsbool = button.classList.contains("js");
+        info_box.classList.add("activeInfo");  // Show the info_box
 
-    if(jsbool){
-        questions = jsquestions;
-    }else{
-        questions = htmlcssquestions;
-    }
+        if(jsbool){
+            questions = jsquestions;
+        } else {
+            questions = htmlcssquestions;
+        }
     });
 });
 
-
-//if ExitQuiz button clicked
+// If ExitQuiz button clicked
 exit_btn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); //hide the info box
+    info_box.classList.remove("activeInfo"); // Hide the info box
     user_box.classList.remove("activeQuiz"); 
 };
 
 exit_quiz_btn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); //hide the info box
+    info_box.classList.remove("activeInfo"); // Hide the info box
     user_box.classList.remove("activeQuiz"); 
 };
 
-// if continueQuiz button clicked
+// If continueQuiz button clicked
 continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide the info box
+    info_box.classList.remove("activeInfo"); // Hide the info box
     user_box.classList.add("activeQuiz"); 
 };
 
+// Start the quiz
 start_quiz_btn.onclick = (e)=>{
-
-    
-
-    // validate
+    // Validate email
     let email = user_box.querySelector(".user_email");
     var emailValidate = email.checkValidity();
     
     if(emailValidate){
         e.preventDefault();
-        //get user name and email
+        // Get user name and email
         user_name = user_box.querySelector(".user_name").value;
         user_email = user_box.querySelector(".user_email").value;
         if (user_name !== '' && user_email !== '') {
             user_box.classList.remove("activeQuiz"); 
-            quiz_box.classList.add("activeQuiz"); //show the quiz box
-            showQuestions(0); //calling showQuestions function
-            queCounter(1); //passing 1 parameter to queCounter
-            startTimer(20); //calling startTimer function
-            startTimerLine(0); //calling startTimerLine function
+            quiz_box.classList.add("activeQuiz"); // Show the quiz box
+            showQuestions(0); // Call showQuestions function
+            queCounter(1); // Pass 1 parameter to queCounter
+            startTimer(20); // Call startTimer function
+            startTimerLine(0); // Call startTimerLine function
         } else {
             e.preventDefault();
             console.log('Email validation failed');
         }
     }
-
 };
 
 let timeValue = 20;
@@ -152,36 +145,34 @@ let user_email = 'mehatab.pathan231@gmail.com';
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// if restartQuiz button clicked
+// If restartQuiz button clicked
 restart_quiz.onclick = ()=>{
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    result_box.classList.remove("activeResult"); //hide the result box
+    quiz_box.classList.add("activeQuiz"); // Show quiz box
+    result_box.classList.remove("activeResult"); // Hide the result box
     timeValue = 20;
     que_count = 0;
     que_numb = 1;
     userScore = 0;
     widthValue = 0;
-    showQuestions(que_count); //calling showQestions function
-    queCounter(que_numb); //passing que_numb value to the queCounter
-    clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
-    startTimer(timeValue);  //calling startTimer function
-    startTimerLine(widthValue);  //calling startTimeLine function
+    showQuestions(que_count); // Call showQestions function
+    queCounter(que_numb); // Pass que_numb value to the queCounter
+    clearInterval(counter); // Clear counter
+    clearInterval(counterLine); // Clear counterLine
+    startTimer(timeValue);  // Call startTimer function
+    startTimerLine(widthValue);  // Call startTimerLine function
     timeText.textContent = "Time Left";  
-    next_btn.classList.remove("show");  //hide the next button
+    next_btn.classList.remove("show");  // Hide the next button
 };
 
-// if quitQuiz button clicked
+// If quitQuiz button clicked
 quit_quiz.onclick = ()=>{
     container[0].style.opacity = "1";
     window.location.reload();
-    
 };
 
 const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
 
-//If Click Next button clicked
+// If Click Next button clicked
 next_btn.onclick = ()=>{
     nextClick();
 };
@@ -205,7 +196,7 @@ function nextClick() {
     }
 }
 
-// getting questions and options from array
+// Getting questions and options from array
 function showQuestions(index){
     const que_text = document.querySelector(".que_text");
     let que_tag = '<span>'+ questions[index].numb+ "." + questions[index].question +'</span>';
@@ -222,11 +213,11 @@ function showQuestions(index){
     }
 }
 
-// div tags for icons
+// Div tags for icons
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
-// if user clicked on option
+// If user clicked on option
 function optionSelected(answer){
     clearInterval(counter);
     clearInterval(counterLine);
@@ -236,13 +227,13 @@ function optionSelected(answer){
     
     if(userAns == correctAns){
         userScore += 1;
-        answer.classList.add("correct");  //adding green color to correct selected option
-        answer.insertAdjacentHTML("beforeend", tickIconTag); // adding tick icon
-    }else{  //answer is incorrect
-        answer.classList.add("incorrect");  //addng red color to incorrect selected option
-        answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cress icon
+        answer.classList.add("correct");  // Add green color to correct selected option
+        answer.insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
+    } else {  // Answer is incorrect
+        answer.classList.add("incorrect");  // Add red color to incorrect selected option
+        answer.insertAdjacentHTML("beforeend", crossIconTag); // Add cross icon
 
-        //if answer is incorrect then automatically selected the correct answer
+        // If answer is incorrect then automatically select the correct answer
         for(i=0; i < allOptions; i++) {
             if(option_list.children[i].textContent == correctAns) {
                 option_list.children[i].setAttribute("class", "option correct");
@@ -251,7 +242,7 @@ function optionSelected(answer){
         }
     }
 
-    // once user selected disabled all options
+    // Once user selected, disable all options
     for (i=0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
@@ -260,40 +251,63 @@ function optionSelected(answer){
     setTimeout(function() {
         nextClick();
     }, 2000);
-    
-    
 }
 
+// Function to show result
+function showResult() {
+    sendEmail()
+        .then(function(response) {
+            // Email sent successfully
+            const messageBox = document.querySelector(".result_box .message");
+            messageBox.textContent = "Email sent successfully! ";
 
-// function showResult
-function showResult(){
-    sendEmail();
-    info_box.classList.remove("activeInfo");  //hide the info box
-    quiz_box.classList.remove("activeQuiz");  //hide the quiz box
-    result_box.classList.add("activeResult");  //show the result box
-    const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3){  //if user scored more than 3 right answers
-        let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
-        scoreText.innerHTML = scoreTag;
-    }
-    else if(userScore > 1){  //if user got more than 1 right answers
-        let scoreTag = '<p>and nice, You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
-        scoreText.innerHTML = scoreTag;
-    }
-    else{  // if user scored less than 1 right asnwer
-        let scoreTag ='<p>and sorry, You got only <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
-        scoreText.innerHTML = scoreTag;
-    }
+            info_box.classList.remove("activeInfo");
+            quiz_box.classList.remove("activeQuiz");
+            result_box.classList.add("activeResult");
+
+            const scoreText = result_box.querySelector(".score_text");
+            if (userScore > 3) {
+                let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            } else if (userScore > 1) {
+                let scoreTag = '<p>and nice, You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            } else {
+                let scoreTag ='<p>and sorry, You got only <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            }
+        })
+        .catch(function(error) {
+            // Email sending failed
+            const messageBox = document.querySelector(".result_box .message");
+            messageBox.textContent = "Failed to send email.";
+
+            info_box.classList.remove("activeInfo");
+            quiz_box.classList.remove("activeQuiz");
+            result_box.classList.add("activeResult");
+
+            const scoreText = result_box.querySelector(".score_text");
+            if (userScore > 3) {
+                let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            } else if (userScore > 1) {
+                let scoreTag = '<p>and nice, You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            } else {
+                let scoreTag ='<p>and sorry, You got only <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
+                scoreText.innerHTML = scoreTag;
+            }
+        });
 }
 
-// timer
+// Timer
 function startTimer(time){
     timeCount.textContent = time;
     counter = setInterval(timer, 1000);
     function timer(){
         timeCount.textContent = time;
-        time --; //decrement the time value
-        if(time <9){
+        time--; // Decrement the time value
+        if(time < 9){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
         }
@@ -319,7 +333,7 @@ function startTimer(time){
     }
 }
 
-// timerLine
+// TimerLine
 function startTimerLine(time){
     counterLine = setInterval(timer, 200);
     function timer(){
@@ -331,27 +345,23 @@ function startTimerLine(time){
     }
 }
 
-// creating a new span tag and passing the question number and total question
+// Creating a new span tag and passing the question number and total question
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQueCountTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
-    bottom_ques_counter.innerHTML = totalQueCountTag; //adding new span tag inside the bottom_ques_counter
+    bottom_ques_counter.innerHTML = totalQueCountTag; // Adding new span tag inside the bottom_ques_counter
 }
+
+// Function to send email using EmailJS
 function sendEmail() {
     var templateParams = {
         to_email: user_email,
-        to_name: user_name, 
-        quiz_score: userScore, 
+        to_name: user_name,
+        quiz_score: userScore,
     };
 
-    emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1')
-        .then(function(response) {
-            console.log('Email sent successfully', response);
-        })
-        .catch(function(error) {
-            
-            console.error('Email sending failed', error);
-        });
+    // Return the promise from emailjs.send()
+    return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
 
 

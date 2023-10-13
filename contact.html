@@ -38,5 +38,66 @@
         </form>
     </div>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+            <li><a href="html-css-quiz.html">HTML/CSS Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us Content -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, suggestions, or issues regarding our quizzes, please don't hesitate to get in touch with us. We value your feedback and are here to help you.</p>
+        
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <!-- Display Area for Form Data -->
+        <div id="formDataDisplay"></div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Get form data
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Display form data
+            var formDataDisplay = document.getElementById("formDataDisplay");
+            formDataDisplay.innerHTML = "<h2>Form Data:</h2>";
+            formDataDisplay.innerHTML += "<p><strong>Name:</strong> " + name + "</p>";
+            formDataDisplay.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
+            formDataDisplay.innerHTML += "<p><strong>Message:</strong> " + message + "</p>";
+        }
+    </script>
+</body>
+
+</html>
 
 </html>
