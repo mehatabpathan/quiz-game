@@ -16,6 +16,66 @@ const timeCount = document.querySelector(".timer .timer_sec");
 var container = document.getElementsByClassName('container');
 var questions = {};
 
+// Add JavaScript to open and close the custom dialog
+
+const confirmationDialog = document.getElementById('custom-dialog');
+const confirmYesButton = document.getElementById('confirm-yes');
+const confirmNoButton = document.getElementById('confirm-no');
+
+function openConfirmationDialog() {
+    confirmationDialog.classList.add('active');
+}
+
+function closeConfirmationDialog() {
+    confirmationDialog.classList.remove('active');
+}
+
+confirmYesButton.addEventListener('click', () => {
+    // Handle "Yes" button action here
+    closeConfirmationDialog();
+    // Add your code to navigate or perform the desired action.
+});
+
+confirmNoButton.addEventListener('click', () => {
+    // Handle "No" button action here
+    closeConfirmationDialog();
+    // Add your code for staying on the quiz or any other action.
+});
+
+
+
+let exitQuiz = false; // A flag to check if the user wants to exit the quiz
+
+// Add event listeners to your anchor tags (e.g., Home, JavaScript Quiz)
+const anchorTags = document.querySelectorAll("a");
+
+anchorTags.forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    if (quiz_box.classList.contains("activeQuiz")) {
+      // The user is currently in the quiz
+      e.preventDefault(); // Prevent the default navigation action
+
+      // Show the custom confirmation dialog
+      const dialog = document.getElementById("custom-dialog");
+      dialog.style.display = "block";
+
+      // Add event listeners to the "Yes" and "No" buttons in the dialog
+      document.getElementById("confirm-yes").addEventListener("click", function () {
+        // If the user clicks "Yes," set the exitQuiz flag to true and navigate to the selected anchor link
+        exitQuiz = true;
+        window.location.href = anchor.getAttribute("href");
+      });
+
+      document.getElementById("confirm-no").addEventListener("click", function () {
+        // If the user clicks "No," hide the dialog and stay on the quiz
+        dialog.style.display = "none";
+      });
+    }
+  });
+});
+
+
+
 //If StartQuiz Button clicked
 start_btn.forEach(button => {
     button.addEventListener('click', () => {
@@ -51,21 +111,30 @@ continue_btn.onclick = ()=>{
     user_box.classList.add("activeQuiz"); 
 };
 
-start_quiz_btn.onclick = ()=>{
-    
-    //get user name and email
-    user_name = user_box.querySelector(".user_name").value;
-    user_email = user_box.querySelector(".user_email").value;
+start_quiz_btn.onclick = (e)=>{
 
-    if (user_name && user_email) {
-        user_box.classList.remove("activeQuiz"); 
-        quiz_box.classList.add("activeQuiz"); //show the quiz box
-        showQuestions(0); //calling showQuestions function
-        queCounter(1); //passing 1 parameter to queCounter
-        startTimer(20); //calling startTimer function
-        startTimerLine(0); //calling startTimerLine function
-    } else {
-        
+    
+
+    // validate
+    let email = user_box.querySelector(".user_email");
+    var emailValidate = email.checkValidity();
+    
+    if(emailValidate){
+        e.preventDefault();
+        //get user name and email
+        user_name = user_box.querySelector(".user_name").value;
+        user_email = user_box.querySelector(".user_email").value;
+        if (user_name !== '' && user_email !== '') {
+            user_box.classList.remove("activeQuiz"); 
+            quiz_box.classList.add("activeQuiz"); //show the quiz box
+            showQuestions(0); //calling showQuestions function
+            queCounter(1); //passing 1 parameter to queCounter
+            startTimer(20); //calling startTimer function
+            startTimerLine(0); //calling startTimerLine function
+        } else {
+            e.preventDefault();
+            console.log('Email validation failed');
+        }
     }
 
 };
@@ -284,4 +353,5 @@ function sendEmail() {
             console.error('Email sending failed', error);
         });
 }
+
 

@@ -1,12 +1,64 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+/* Styling for custom dialog */
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#custom-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+#custom-dialog p {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#custom-dialog .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#confirm-yes, #confirm-no {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#confirm-yes {
+    background: #007bff;
+    color: #fff;
+}
+
+#confirm-no {
+    background: #ccc;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.container {
+    min-height: 100vh;
+}
+
 .container img{
     max-width: 100%;
     width: 100%;
@@ -57,7 +109,7 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+
 }
 
 ::selection{
@@ -531,9 +583,59 @@ footer button:hover{
     transition: all 0.1s ease;
     overflow: hidden;
 }
+
+/* footer section start */
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: white;
+}
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #257acf;
+    height: auto;
+    padding-top: 20px;
+    position: relative;
+    z-index: 999;
+}
+
+.footer_logo {
+    width: 100%;
+    text-align: center;
+}
+
+.svg_black {
+    fill: #000000;
+}
+.svg_white {
+    fill: #ffffff;
+}
+
+/* footer section end */
+
+
 /* Media queries */
 
 /* For medium screen sizes from 950px wide and down */
+
+@media only screen and (min-width: 1040px) {
+    footer{
+        background: #b1d1f0;
+        box-shadow: 8px 8px 8px black;
+        color: rgb(3, 46, 103);
+    }
+}
 @media screen and (max-width: 950px){
     body{
         overflow: scroll;

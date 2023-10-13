@@ -20,7 +20,18 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+
+    <div id="custom-dialog" class="confirmation-dialog">
+        <div class="dialog-content">
+            <p>Do you want to exit the quiz?</p>
+            <center>
+                <button id="confirm-yes">Yes</button>
+                <button id="confirm-no">No</button>
+            </center>
+        </div>
+    </div>
+
+
 
     <div class="container">
         <h1>Programming Quiz</h1>
@@ -31,7 +42,7 @@
                 <div class="start_btn"><button class="js">Start JavaScript Quiz</button></div>
             </div>
             <div class="grid-item">
-                <img src="assets/images/html_css.png"  alt="html/css">
+                <img src="assets/images/html_css.png" alt="html/css">
                 <!--Start Quiz Button-->
                 <div class="start_btn"><button class="htmlcss">Start HTML/CSS Quiz</button></div>
             </div>
@@ -58,26 +69,28 @@
     </div>
 
     <div class="user_box">
-        <div class="info_title">
-            <span>Please Enter Your Information</span>
-        </div>
-        <div class="info_list">
+        <form>
+            <div class="info_title">
+                <span>Please Enter Your Information</span>
+            </div>
+            <div class="info_list">
 
-            <div class="info">
-                <label> Name: </label>
-                <input class="option user_name" type="text">
+                <div class="info">
+                    <label> Name: </label>
+                    <input class="option user_name" type="text">
+
+                </div>
+                <div class="info">
+                    <label> Email: </label>
+                    <input class="option user_email" type="email">
+                </div>
 
             </div>
-            <div class="info">
-                <label> Email: </label>
-                <input class="option user_email" type="email">
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button type="submit" class="start">Start</button>
             </div>
-        
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="start">Start</button>
-        </div>
+        </form>
     </div>
 
     <!--Quiz Box-->
@@ -114,12 +127,12 @@
         </section>
 
         <!--Quiz box footer-->
-       <footer>
+        <footer>
             <div class="total_que">
                 <span>2 Of 10 Questions</span>
             </div>
-           <button class="next_btn"> Click Next </button>
-        </footer> 
+            <button class="next_btn"> Click Next </button>
+        </footer>
     </div>
 
     <!--Result Box-->
@@ -140,6 +153,42 @@
         </div>
     </div>
     </div>
+    <!-- footer section start -->
+   
+    <div class="footer_section">
+
+        <div class="container">
+           <ul id="social-networks">
+              <li>
+                 <a  href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <img  alt="name" src="assets/images/facebook.svg" width="40" height="40">
+                    
+                 </a>
+              </li>
+              <li>
+                 <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <img alt="name" src="assets/images/twitter.svg" width="40" height="40"></a>
+              </li>
+              <li>
+                 <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <img alt="name" src="assets/images/youtube.svg" width="40" height="40"></a>
+              </li>
+              <li>
+                 <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <img alt="name" src="assets/images/instagram.svg" width="40" height="40"></a>
+              </li>
+           </ul>
+        </div>
+
+    </div>
+     
+ 
+  
+  <!-- footer section end -->
 
     <!--Inside this JavaScript file I've inserted Questions and Options only-->
     <script src="assets/js/jsquestions.js"></script>
@@ -153,6 +202,6 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         emailjs.init("UOe2Low0qTXYUslK1");
-    </script> 
+    </script>
 </body>
 </html>
