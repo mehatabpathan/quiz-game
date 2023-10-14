@@ -364,6 +364,30 @@ function sendEmail() {
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
 
+function sendContactEmail() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    var templateParams = {
+        to_email: email,
+        to_name: name,
+        message: message,
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_kom0awm', 'template_y0qtqv9', templateParams, 'UOe2Low0qTXYUslK1')
+        .then(function(response) {
+            // Reset the form
+            document.getElementById("contactForm").reset();
+            // Display success message
+            var successMessage = "Your message has been sent successfully! We will get back to you soon.";
+            document.getElementById("successMessage").textContent = successMessage;
+        })
+        .catch(function(error) {
+            console.log("Failed to send Email");
+        });
+}
 
 
 

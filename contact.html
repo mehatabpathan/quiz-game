@@ -34,28 +34,19 @@
             <input type="email" id="email" name="email" required><br><br>
             <label for="message">Your Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="sendContactEmail()">Submit</button>
         </form>
 
         <!-- Display Area for Form Data -->
-        <div id="formDataDisplay"></div>
+        <div id="successMessage"></div>
     </div>
-
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        function submitForm() {
-            // Get form data
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            // Display form data
-            var formDataDisplay = document.getElementById("formDataDisplay");
-            formDataDisplay.innerHTML = "<h2>Form Data:</h2>";
-            formDataDisplay.innerHTML += "<p><strong>Name:</strong> " + name + "</p>";
-            formDataDisplay.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
-            formDataDisplay.innerHTML += "<p><strong>Message:</strong> " + message + "</p>";
-        }
+        emailjs.init("UOe2Low0qTXYUslK1");
     </script>
+
+    
 </body>
 
 </html>
