@@ -707,8 +707,7 @@ form button:hover {
     display: block;
     opacity: 1;
 }
-@media (max-width: 767px) {
+
     body {
         overflow-x: hidden;
     }
-}
