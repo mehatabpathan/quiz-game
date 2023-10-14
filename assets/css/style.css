@@ -611,7 +611,7 @@ form textarea {
 form button {
     background-color: #4CAF50; /* Set button background color */
     color: white; /* Set text color to white */
-    padding: 5 20px; /* Add some padding to the button */
+    
     border: none; /* Remove border */
     border-radius: 5px; /* Optional: Add rounded corners to the button */
     cursor: pointer; /* Change cursor to pointer on hover */
