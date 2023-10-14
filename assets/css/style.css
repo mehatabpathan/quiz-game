@@ -113,7 +113,7 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ::selection{
@@ -151,8 +151,8 @@ body {
     border: 1px solid #ccc;
     margin-right: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: all 0.1s cubic-bezier(.25,.8,.25,1);
-  border-radius: 5px;
+    transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
 }
 
 .js,
@@ -687,6 +687,7 @@ form button:hover {
 @media screen and (max-width: 480px){
     .grid-container {
         display:  block !important;
+        margin-top: 15px;
     }
     div.container {
         display:  block !important;
@@ -708,6 +709,6 @@ form button:hover {
     opacity: 1;
 }
 
-    body {
-        overflow-x: hidden;
-    }
+body {
+    overflow-x: hidden;
+}
