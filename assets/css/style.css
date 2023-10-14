@@ -1,6 +1,9 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+.hide{
+    display: none !important;
+}
 
 /* Styling for custom dialog */
 body {
@@ -200,21 +203,6 @@ body {
     background: #fff;
     cursor: pointer;
 }
-
-/* Responsive font size for the button */
-@media (max-width: 767px) {
-    .start_btn button {
-        font-size: 16px; /* Adjust the font size for smaller screens */
-    }
-}
-
-@media (min-width: 768px) {
-    .start_btn button {
-        font-size: 18px; /* Default font size for medium-sized screens and larger */
-    }
-}
-
-
 
 /* info_box */
 .user_box, 
@@ -422,20 +410,6 @@ body {
     font-weight: 600;
 }
 
-/* Responsive styles for .que_text within .quiz_box section */
-@media (max-width: 767px) {
-    .quiz_box section .que_text {
-        font-size: 20px; /* Decrease font size for smaller screens */
-    }
-}
-
-@media (min-width: 768px) {
-    .quiz_box section .que_text {
-        font-size: 25px; /* Revert to the original font size for larger screens */
-    }
-}
-
-
 .quiz_box section .option_list{
     padding: 20px 0px;
     display: block;
@@ -471,7 +445,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding-top: 10px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -692,6 +666,34 @@ form button:hover {
         width: 350px;
         height:80vh;
         overflow:scroll;
+    }
+}
+@media screen and (max-width: 640px){
+    nav li {
+        display: block;
+        margin: 10px 20px;
+    }
+    nav ul {
+        text-align: left;
+      }
+
+    .quiz_box{
+        transform: translate(0%, 0%);
+        margin-top: 120px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .grid-container {
+        display:  block !important;
+    }
+    div.container {
+        display:  block !important;
+        margin-top: 15px;
+    }
+    .container img {
+        height: 150px !important;
     }
 }
 

@@ -18,6 +18,8 @@ var container = document.getElementsByClassName('container');
 const queryContainer = document.querySelector(".container");
 var questions = {};
 
+// Add JavaScript to open and close the custom dialog
+
 const confirmationDialog = document.getElementById('custom-dialog');
 const confirmYesButton = document.getElementById('confirm-yes');
 const confirmNoButton = document.getElementById('confirm-no');
@@ -37,6 +39,7 @@ function openConfirmationDialog() {
     queryContainer.style.pointerEvents = 'none';
 }
 
+
 function closeConfirmationDialog() {
     confirmationDialog.style.display = 'none'; // Hide the dialog
     quizBox.classList.remove('blur'); // Remove blur from the quiz box
@@ -51,17 +54,17 @@ function closeConfirmationDialog() {
     queryContainer.style.pointerEvents = 'auto';
 
 }
-
 confirmYesButton.addEventListener('click', () => {
     // Handle "Yes" button action here
     closeConfirmationDialog();
+    // Add your code to navigate or perform the desired action.
 });
 
 confirmNoButton.addEventListener('click', () => {
     // Handle "No" button action here
     closeConfirmationDialog();
+    // Add your code for staying on the quiz or any other action.
 });
-
 
 let exitQuiz = false; // A flag to check if the user wants to exit the quiz
 
@@ -193,7 +196,11 @@ quit_quiz.onclick = ()=>{
 
 const next_btn = document.querySelector("footer .next_btn");
 
-// Modify the nextClick function
+// If Click Next button clicked
+next_btn.onclick = ()=>{
+    nextClick();
+};
+
 function nextClick() {
     if (que_count < questions.length - 1) {
         que_count++;
@@ -207,18 +214,11 @@ function nextClick() {
         timeText.textContent = "Time Left";
         next_btn.classList.remove("show");
     } else {
-        // If it's the final question, show the result directly
         clearInterval(counter);
         clearInterval(counterLine);
         showResult();
     }
 }
-
-// Update the next_btn.onclick event listener
-next_btn.onclick = () => {
-    nextClick();
-};
-
 
 // Getting questions and options from array
 function showQuestions(index){
@@ -242,43 +242,42 @@ let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 // If user clicked on option
-function optionSelected(answer) {
+function optionSelected(answer){
+    next_btn.classList.add("hide");
+    clearInterval(counter);
+    clearInterval(counterLine);
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     const allOptions = option_list.children.length;
-
-    if (userAns == correctAns) {
+    
+    if(userAns == correctAns){
         userScore += 1;
-        answer.classList.add("correct"); // Add green color to correct selected option
+        answer.classList.add("correct");  // Add green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
-    } else {
-        // Answer is incorrect
-        answer.classList.add("incorrect"); // Add red color to incorrect selected option
+    } else {  // Answer is incorrect
+        answer.classList.add("incorrect");  // Add red color to incorrect selected option
         answer.insertAdjacentHTML("beforeend", crossIconTag); // Add cross icon
 
-        // If answer is incorrect, find and mark the correct answer
-        for (let i = 0; i < allOptions; i++) {
-            if (option_list.children[i].textContent == correctAns) {
-                option_list.children[i].classList.add("correct");
+        // If answer is incorrect then automatically select the correct answer
+        for(i=0; i < allOptions; i++) {
+            if(option_list.children[i].textContent == correctAns) {
+                option_list.children[i].setAttribute("class", "option correct");
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
             }
         }
     }
 
-    // Once the user selects, disable all options and reveal the correct answer
-    for (let i = 0; i < allOptions; i++) {
+    // Once user selected, disable all options
+    for (i=0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
+    
 
-    // After a short delay, show the correct answer and enable the "Next" button
-    setTimeout(function () {
-        next_btn.classList.add("show");
+    setTimeout(function() {
+        nextClick();
+        next_btn.classList.remove("hide");
     }, 2000);
 }
-
-
-
-
 
 // Function to show result
 function showResult() {
@@ -327,44 +326,35 @@ function showResult() {
         });
 }
 
-let userAnswered = false;
-
 // Timer
-function startTimer(time) {
+function startTimer(time){
     timeCount.textContent = time;
     counter = setInterval(timer, 1000);
-    function timer() {
+    function timer(){
         timeCount.textContent = time;
         time--; // Decrement the time value
-        if (time < 9) {
+        if(time < 9){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
         }
-        if (time < 0) {
+        if(time < 0){
             clearInterval(counter);
             timeText.textContent = "Time Off";
-            if (!userAnswered) {
-                let correctAns = questions[que_count].answer;
-                const allOptions = option_list.children.length;
 
-                for (i = 0; i < allOptions; i++) {
-                    if (option_list.children[i].textContent == correctAns) {
-                        option_list.children[i].setAttribute("class", "option correct");
-                        option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
-                        console.log("Time Off: Auto selected correct answer.");
-                    }
-                }
-                for (i = 0; i < allOptions; i++) {
-                    option_list.children[i].classList.add("disabled");
+            let correctAns = questions[que_count].answer;
+            const allOptions = option_list.children.length;
+
+            for (i=0; i < allOptions; i++){
+                if(option_list.children[i].textContent == correctAns) {
+                    option_list.children[i].setAttribute("class", "option correct");
+                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+                    console.log("Time Off: Auto selected correct answer.");
                 }
             }
-            if (que_count === questions.length - 1) {
-                setTimeout(function () {
-                    showResult();
-                }, 2000);
-            } else {
-                next_btn.classList.add("show");
+            for(i=0; i < allOptions; i++){
+                option_list.children[i].classList.add("disabled");
             }
+            next_btn.classList.add("show");
         }
     }
 }
@@ -455,7 +445,5 @@ function sendContactEmail() {
 
     }
 }
-
-
 
 
