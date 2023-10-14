@@ -189,9 +189,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* start Quiz button  */
-.start_btn button{
-    font-size: large;
+/* start Quiz button */
+.start_btn button {
     font-weight: 500;
     color: #087c4d;
     padding: 15px 30px;
@@ -201,6 +200,21 @@ body {
     background: #fff;
     cursor: pointer;
 }
+
+/* Responsive font size for the button */
+@media (max-width: 767px) {
+    .start_btn button {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .start_btn button {
+        font-size: 18px; /* Default font size for medium-sized screens and larger */
+    }
+}
+
+
 
 /* info_box */
 .user_box, 
@@ -223,7 +237,7 @@ body {
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
     border-radius: 5px 5px 0 0;
     font-size: 20px;
     font-weight: 700;
@@ -301,6 +315,26 @@ body {
     border-radius: 5px; 
     box-sizing: border-box; 
 }
+
+.aboutus {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add some padding inside the form */
+    border: 1px solid #ccc; /* Add a border around the form */
+    border-radius: 10px; /* Optional: Add rounded corners to the form */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a 3D effect */
+}
+
+.blur {
+    filter: blur(4px); /* Adjust the blur amount as needed */
+    pointer-events: none; /* Prevent clicks on blurred elements */
+    user-select: none; /* Prevent text selection on blurred elements */
+  }
+
+  .quiz_box.blur {
+    filter: blur(5px);
+    pointer-events: none;
+  }
 
 /* quiz_box */
 .quiz_box{
@@ -382,10 +416,25 @@ body {
     background: linear-gradient(0deg, rgba(210,253,255,0) 2%, rgba(251,251,251,1) 100%);
 }
 
-.quiz_box section .que_text{
+/* Original styles for .que_text within .quiz_box section */
+.quiz_box section .que_text {
     font-size: 25px;
     font-weight: 600;
 }
+
+/* Responsive styles for .que_text within .quiz_box section */
+@media (max-width: 767px) {
+    .quiz_box section .que_text {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .quiz_box section .que_text {
+        font-size: 25px; /* Revert to the original font size for larger screens */
+    }
+}
+
 
 .quiz_box section .option_list{
     padding: 20px 0px;
@@ -422,7 +471,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -644,4 +693,15 @@ form button:hover {
         height:80vh;
         overflow:scroll;
     }
+}
+
+#successMessage {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#successMessage.visible {
+    display: block;
+    opacity: 1;
 }
