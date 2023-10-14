@@ -72,6 +72,11 @@ div.container.fade {
     opacity:0;
 }
 
+/* Center the buttons */
+.confirmation-dialog {
+    text-align: center;
+}
+
 @media (max-width:767px) {
     .container img {
         max-width: 100%;
