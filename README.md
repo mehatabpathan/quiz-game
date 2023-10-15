@@ -62,6 +62,18 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 ![Score Crad](assets/images/resultbox.png)
 
+#### About page
+
+- Users are encouraged to explore the quizzes. By mentioning that the quizzes help users learn new concepts, the content invites visitors to interact with the educational materials provided on the site.
+
+![Score Crad](assets/images/aboutpage.png)
+
+#### Contact Page
+ - The page provides clear instructions and feedback to the user. If there are any issues, suggestions, or questions, users are encouraged to reach out. The success message confirms to the user that their message has been successfully submitted.
+
+![Score Crad](assets/images/contactpage.png)
+
+
 ### Colour Scheme
 
 [Website Colour Scheme](assets/images/coolors.png "coolors image")
@@ -166,9 +178,9 @@ All Scripts checked with [JSHint](https://jshint.com/)
 
 | **Sctipt** | **Any Errors?** | **Warnings?** | Other note worthy comments |
 |:----------:|:---------------:|:-------------:|:--------------------------:|
-| script.js | No Errors | 5 Warnings all to do with compatibility | None |
-| jsquestions.js | No Errors | no warnings| None |
-| htmlcssquestions.js | No Errors | no warnings| None |
+| script.js | No Errors | No Warnings  | None |
+| jsquestions.js | No Errors | No Warnings| None |
+| htmlcssquestions.js | No Errors | No Warnings| None |
 
 ### Light House
 
@@ -210,19 +222,23 @@ To fork the depository:
 - [MS Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H)
 - [Github Desktop App](https://desktop.github.com/)
 - [ui.dev Am I Responsive](https://ui.dev/amiresponsive)
+- [Wire Frames](https://app.uizard.io/)
 
 ## Wireframes
 ### Start Page
-[Start page wireframe](assets/images/startpagewf.png "view Start Page wire frame")
+[Start page wireframe](assets/images/startwf.png "view Start Page wire frame")
 
 ### Set of Rules
-[Set of Rules wireframe](assets/images/ruleswf.png "view Set of Rules wire frame")
+[Set of Rules wireframe](assets/images/rulewf.png "view Set of Rules wire frame")
+
+### User Information Input
+[Set of Rules wireframe](assets/images/infowf.png "view Set of Rules wire frame")
 
 ### Quiz Box
 [Quiz Box wireframe](assets/images/quizboxwf.png " view Quiz Box wire frame")
 
 ### Score Card
-[Score Card wireframe](assets/images/scorecardwf.png "view Score Card wire frame")
+[Score Card wireframe](assets/images/scorewf.png "view Score Card wire frame")
 
 
 ## Credits

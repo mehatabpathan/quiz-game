@@ -703,7 +703,7 @@ form button:hover {
     }
 }
 
-@media screen and (max-width: 736px){
+/* @media screen and (max-width: 736px){
     .container{
         height: 150%;
     }
@@ -714,7 +714,7 @@ form button:hover {
         height: 150%;
     }
 
-}
+} */
 #successMessage {
     display: none;
     opacity: 0;
