@@ -39,7 +39,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - Display rules and instructions for the quiz.
 - Inform users about the time limit per question, no option reselection, inability to exit during the quiz, and scoring system.
 
-![Set Of Rules](assets/images/rulespage.png)
+![Set Of Rules](assets/images/rulebox.png)
 
 #### User Information Input
 
@@ -60,7 +60,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - Display final score out of the total number of questions.
 - Option to replay the quiz.
 
-![Score Crad](assets/images/scorecard.png)
+![Score Crad](assets/images/resultbox.png)
 
 ### Colour Scheme
 

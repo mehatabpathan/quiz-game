@@ -703,9 +703,9 @@ form button:hover {
     }
 }
 
-@media screen and (max-width: 734px){
+@media screen and (max-width: 736px){
     .container{
-        height: 120%;
+        height: 150%;
     }
 
 }
