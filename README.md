@@ -115,7 +115,7 @@ The website uses bright and light colours using color gradient for more variety.
 - checked with [W3 HTML Validator](assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
 **Script.js**
-- checked with[JShint script.js](assets/images/script.js%20validationss.png "script.js")
+- checked with[JShint script.js](assets/images/jshint.png "script.js")
 
 **jsquestions.js**
 -checked with[JShint javascript questions](assets/images/jsquestionvalidationss.png "jsquestions")
