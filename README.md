@@ -14,34 +14,51 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 
 ## User Stories
-- As a user, I can track my quiz progress and see my scores over time.
-- As a user, I want to browse and select quizzes by category so that I can choose quizzes that match my interests or skill level.
+- As a user, I want to navigate to different sections of the website so that I can choose the quiz I want to play.
+- As a user, I want to start a quiz so that I can test my programming knowledge.
 - As a user, I want to see a list of available questions in a quiz so that I can prepare and understand the scope of the quiz.
-- As a user,  I can answer questions and test my knowledge.
-- As a user, I want to answer multiple-choice questions so that I can provide my answers for evaluation.
-- As a user, I want to see my progress within the quiz so that I can gauge how much is left and manage my time effectively.
-- As a user, I want to review and change my answers before submitting the quiz so that I can make sure I've answered to the best of my ability.
-- As a user, I want to receive immediate feedback on my answers so that I can understand which questions I answered correctly and incorrectly.
+- As a user, I want to receive clear instructions on how the quiz works so that I can understand the rules.
+- As a user, I want to enter my name and email before starting the quiz so that I can be identified and receive my results.
+- As a user, I want to see my progress in the quiz so that I know how many questions are remaining.
+- As a user, I want to see my final score at the end of the quiz so that I know how well I performed.
+- As a user, I want to be able to replay the quiz so that I can try to improve my score.
+- As a user, I want to be able to quit the quiz at any time so that I can exit the game.
+- As a user, I want the quiz to be visually appealing and easy to understand so that I can enjoy my experience.
 
 ## Features
 ### Start Page
 
-Landing page of Programming Quiz. It displays two start button with javascript and html/css when pressed that start showing the rules box if we press continue it will take us to quiz box once we are done with quiz it will display the score card.
+- Landing page of Programming Quiz. Home page with navigation links.
+- Links to JavaScript Quiz, HTML/CSS Quiz, About, and Contact pages. 
+- Start buttons for JavaScript Quiz and HTML/CSS Quiz.
 
 ![Start page](assets/images/startpage.png)
 
 #### Set Of Rules
 
+- Display rules and instructions for the quiz.
+- Inform users about the time limit per question, no option reselection, inability to exit during the quiz, and scoring system.
+
 ![Set Of Rules](assets/images/Rulesbox.png)
----
+
+#### User Information Input
+
+- Form to input user's name and email before starting the quiz.
+
+![User Information Input](assets/images/Rulesbox.png)
+
 ### Quiz Box
 
-If we press javascript questions it shows javascript quiz else it shows html/css questions .It shows all the question from 1 to 10 .
+- Display quiz questions with multiple-choice options.
+- Implement a 20-second timer for each question.
+- Display current question number out of the total number of questions.
 
 ![Quiz Box](assets/images/Quizbox.png)
 
 #### Score Card
-This shows the result of the score.
+
+- Display final score out of the total number of questions.
+- Option to replay the quiz.
 
 ![Score Crad](assets/images/scorecard.png)
 

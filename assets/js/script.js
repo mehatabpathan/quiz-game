@@ -454,5 +454,3 @@ function sendContactEmail() {
 
     }
 }
-
-
