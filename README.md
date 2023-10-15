@@ -173,7 +173,7 @@ All Scripts checked with [JSHint](https://jshint.com/)
 ### Light House
 
 
-[lighthouse ](assets/images/lighthousess.png "view light house")
+[lighthouse ](assets/images/lighthouse.png "view light house")
 
 
 
