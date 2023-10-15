@@ -39,13 +39,13 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - Display rules and instructions for the quiz.
 - Inform users about the time limit per question, no option reselection, inability to exit during the quiz, and scoring system.
 
-![Set Of Rules](assets/images/Rulesbox.png)
+![Set Of Rules](assets/images/rulespage.png)
 
 #### User Information Input
 
 - Form to input user's name and email before starting the quiz.
 
-![User Information Input](assets/images/Rulesbox.png)
+![User Information Input](assets/images/infopage.png)
 
 ### Quiz Box
 
@@ -53,7 +53,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - Implement a 20-second timer for each question.
 - Display current question number out of the total number of questions.
 
-![Quiz Box](assets/images/Quizbox.png)
+![Quiz Box](assets/images/quizbox.png)
 
 #### Score Card
 
