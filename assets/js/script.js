@@ -5,13 +5,13 @@ emailjs.init("UOe2Low0qTXYUslK1");
 // Selecting all required elements
 const startBtn = document.querySelectorAll(".start_btn button");
 const infoBox = document.querySelector(".info_box");
-const user_box = document.querySelector(".user_box");
-const exit_btn = infoBox.querySelector(".buttons .quit");
-const exit_quiz_btn = user_box.querySelector(".buttons .quit");
-const continue_btn = infoBox.querySelector(".buttons .restart");
-const start_quiz_btn = user_box.querySelector(".buttons .start");
+const userBox = document.querySelector(".user_box");
+const exitBtn = infoBox.querySelector(".buttons .quit");
+const exitQuizBtn = userBox.querySelector(".buttons .quit");
+const continueBtn = infoBox.querySelector(".buttons .restart");
+const startQuizBtn = userBox.querySelector(".buttons .start");
 const quiz_box = document.querySelector(".quiz_box");
-const result_box = document.querySelector(".result_box");
+const resultBox = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
@@ -115,37 +115,37 @@ startBtn.forEach(button => {
 });
 
 // If ExitQuiz button clicked
-exit_btn.onclick = ()=>{
+exitBtn.onclick = ()=>{
     container[0].style.opacity = "1";
     infoBox.classList.remove("activeInfo"); // Hide the info box
-    userox.classList.remove("activeQuiz"); 
+    userBox.classList.remove("activeQuiz"); 
 };
 
-exit_quiz_btn.onclick = ()=>{
+exitQuizBtn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.remove("activeQuiz"); 
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userBox.classList.remove("activeQuiz"); 
 };
 
 // If continueQuiz button clicked
-continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.add("activeQuiz"); 
+continueBtn.onclick = ()=>{
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userBox.classList.add("activeQuiz"); 
 };
 
 // Start the quiz
-start_quiz_btn.onclick = (e)=>{
+startQuizBtn.onclick = (e)=>{
     // Validate email
-    let email = user_box.querySelector(".user_email");
+    let email = userBox.querySelector(".user_email");
     var emailValidate = email.checkValidity();
     
     if(emailValidate){
         e.preventDefault();
         // Get user name and email
-        user_name = user_box.querySelector(".user_name").value;
-        user_email = user_box.querySelector(".user_email").value;
+        user_name = userBox.querySelector(".user_name").value;
+        user_email = userBox.querySelector(".user_email").value;
         if (user_name !== '' && user_email !== '') {
-            user_box.classList.remove("activeQuiz"); 
+            userBox.classList.remove("activeQuiz"); 
             quiz_box.classList.add("activeQuiz"); // Show the quiz box
             showQuestions(0); // Call showQuestions function
             queCounter(1); // Pass 1 parameter to queCounter
@@ -168,13 +168,13 @@ let widthValue = 0;
 let user_name = 'Mehatab';
 let user_email = 'mehatab.pathan231@gmail.com';
 
-const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+const restart_quiz = resultBox.querySelector(".buttons .restart");
+const quit_quiz = resultBox.querySelector(".buttons .quit");
 
 // If restartQuiz button clicked
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); // Show quiz box
-    result_box.classList.remove("activeResult"); // Hide the result box
+    resultBox.classList.remove("activeResult"); // Hide the result box
     timeValue = 20;
     que_count = 0;
     que_numb = 1;
@@ -298,11 +298,11 @@ function showResult() {
             const messageBox = document.querySelector(".result_box .message");
             messageBox.textContent = "Email sent successfully! ";
 
-            info_box.classList.remove("activeInfo");
+            infoBox.classList.remove("activeInfo");
             quiz_box.classList.remove("activeQuiz");
-            result_box.classList.add("activeResult");
+            resultBox.classList.add("activeResult");
 
-            const scoreText = result_box.querySelector(".score_text");
+            const scoreText = resultBox.querySelector(".score_text");
             if (userScore > 3) {
                 let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
                 scoreText.innerHTML = scoreTag;
@@ -319,11 +319,11 @@ function showResult() {
             const messageBox = document.querySelector(".result_box .message");
             messageBox.textContent = "Failed to send email.";
 
-            info_box.classList.remove("activeInfo");
+            infoBox.classList.remove("activeInfo");
             quiz_box.classList.remove("activeQuiz");
-            result_box.classList.add("activeResult");
+            resultBox.classList.add("activeResult");
 
-            const scoreText = result_box.querySelector(".score_text");
+            const scoreText = resultBox.querySelector(".score_text");
             if (userScore > 3) {
                 let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
                 scoreText.innerHTML = scoreTag;
