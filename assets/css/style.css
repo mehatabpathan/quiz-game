@@ -57,6 +57,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
 }
 .container img{
     max-width: 100%;
@@ -709,7 +710,7 @@ form button:hover {
 }
 @media screen and (max-width: 684px){
     .container{
-        height: 80%;
+        height: 150%;
     }
 
 }
