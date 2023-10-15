@@ -3,12 +3,12 @@
 emailjs.init("UOe2Low0qTXYUslK1");
 
 // Selecting all required elements
-const start_btn = document.querySelectorAll(".start_btn button");
-const info_box = document.querySelector(".info_box");
+const startBtn = document.querySelectorAll(".start_btn button");
+const infoBox = document.querySelector(".info_box");
 const user_box = document.querySelector(".user_box");
-const exit_btn = info_box.querySelector(".buttons .quit");
+const exit_btn = infoBox.querySelector(".buttons .quit");
 const exit_quiz_btn = user_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
+const continue_btn = infoBox.querySelector(".buttons .restart");
 const start_quiz_btn = user_box.querySelector(".buttons .start");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
@@ -100,11 +100,11 @@ anchorTags.forEach((anchor) => {
 });
 
 // If StartQuiz Button clicked
-start_btn.forEach(button => {
+startBtn.forEach(button => {
     button.addEventListener('click', () => {
         container[0].style.opacity = "0";   
         var jsbool = button.classList.contains("js");
-        info_box.classList.add("activeInfo");  // Show the info_box
+        infoBox.classList.add("activeInfo");  // Show the info_box
 
         if(jsbool){
             questions = jsquestions;
@@ -117,8 +117,8 @@ start_btn.forEach(button => {
 // If ExitQuiz button clicked
 exit_btn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.remove("activeQuiz"); 
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userox.classList.remove("activeQuiz"); 
 };
 
 exit_quiz_btn.onclick = ()=>{
