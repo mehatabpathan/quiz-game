@@ -4,46 +4,75 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 ![Programming Quiz Responive website](assets/images/responsive.png)
 
-[View Shoppers Stop Github pages](https://github.com/mehatabpathan/quiz-game "View shoppers stop Github pages")
+[View Programming Quiz Github pages](https://github.com/mehatabpathan/quiz-game "View Programming Quiz Github pages")
 
-[View shoppers Stop Live Website](https://mehatabpathan.github.io/quiz-game/ "View Shoppers stop Live Website")
+[View Programming Quiz Live Website](https://mehatabpathan.github.io/quiz-game/ "View Programming Quiz Live Website")
 
-![Static Badge](https://img.shields.io/badge/Last_Commit-September-red)
+![Static Badge](https://img.shields.io/badge/Last_Commit-October-red)
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
 ![Static Badge](https://img.shields.io/badge/Languages-3-greens)
 
 
 ## User Stories
-- As a user, I can track my quiz progress and see my scores over time.
-- As a user, I want to browse and select quizzes by category so that I can choose quizzes that match my interests or skill level.
+- As a user, I want to navigate to different sections of the website so that I can choose the quiz I want to play.
+- As a user, I want to start a quiz so that I can test my programming knowledge.
 - As a user, I want to see a list of available questions in a quiz so that I can prepare and understand the scope of the quiz.
-- As a user,  I can answer questions and test my knowledge.
-- As a user, I want to answer multiple-choice questions so that I can provide my answers for evaluation.
-- As a user, I want to see my progress within the quiz so that I can gauge how much is left and manage my time effectively.
-- As a user, I want to review and change my answers before submitting the quiz so that I can make sure I've answered to the best of my ability.
-- As a user, I want to receive immediate feedback on my answers so that I can understand which questions I answered correctly and incorrectly.
+- As a user, I want to receive clear instructions on how the quiz works so that I can understand the rules.
+- As a user, I want to enter my name and email before starting the quiz so that I can be identified and receive my results.
+- As a user, I want to see my progress in the quiz so that I know how many questions are remaining.
+- As a user, I want to see my final score at the end of the quiz so that I know how well I performed.
+- As a user, I want to be able to replay the quiz so that I can try to improve my score.
+- As a user, I want to be able to quit the quiz at any time so that I can exit the game.
+- As a user, I want the quiz to be visually appealing and easy to understand so that I can enjoy my experience.
 
 ## Features
 ### Start Page
 
-Landing page of Programming Quiz. It displays two start button with javascript and html/css when pressed that start showing the rules box if we press continue it will take us to quiz box once we are done with quiz it will display the score card.
+- Landing page of Programming Quiz. Home page with navigation links.
+- Links to JavaScript Quiz, HTML/CSS Quiz, About, and Contact pages. 
+- Start buttons for JavaScript Quiz and HTML/CSS Quiz.
 
 ![Start page](assets/images/startpage.png)
 
 #### Set Of Rules
 
-![Set Of Rules](assets/images/Rulesbox.png)
----
+- Display rules and instructions for the quiz.
+- Inform users about the time limit per question, no option reselection, inability to exit during the quiz, and scoring system.
+
+![Set Of Rules](assets/images/rulebox.png)
+
+#### User Information Input
+
+- Form to input user's name and email before starting the quiz.
+
+![User Information Input](assets/images/infopage.png)
+
 ### Quiz Box
 
-If we press javascript questions it shows javascript quiz else it shows html/css questions .It shows all the question from 1 to 10 .
+- Display quiz questions with multiple-choice options.
+- Implement a 20-second timer for each question.
+- Display current question number out of the total number of questions.
 
-![Quiz Box](assets/images/Quizbox.png)
+![Quiz Box](assets/images/quizbox.png)
 
 #### Score Card
-This shows the result of the score.
 
-![Score Crad](assets/images/scorecard.png)
+- Display final score out of the total number of questions.
+- Option to replay the quiz.
+
+![Score Crad](assets/images/resultbox.png)
+
+#### About page
+
+- Users are encouraged to explore the quizzes. By mentioning that the quizzes help users learn new concepts, the content invites visitors to interact with the educational materials provided on the site.
+
+![Score Crad](assets/images/aboutpage.png)
+
+#### Contact Page
+ - The page provides clear instructions and feedback to the user. If there are any issues, suggestions, or questions, users are encouraged to reach out. The success message confirms to the user that their message has been successfully submitted.
+
+![Score Crad](assets/images/contactpage.png)
+
 
 ### Colour Scheme
 
@@ -81,16 +110,16 @@ The website uses bright and light colours using color gradient for more variety.
 | Author Links appearing underneath other elements at certain resolutions | Removed Z index | Y |
 | How to div was displaying upon load | Added hidden class to it to hide it on load | Y |
 | Responsive css attempt of landscape mode set everything in an od skew to left | Removed the css that caused issue | Y |
-| Over responsive footer | There was a buggy CSS code using footer and anchor tags I removed it | Y |
 | Font was difficult to read for some users | Replaced font with a more user friendly font | Y |
 | Hover effect remains active after selecting an answer and next question is loading | Added media querry to remove hover effect on touch devices | Y |
 | Hover effect disabled on all devices | Added missing media querry to the css | Y |
+| Website is not responsive | Added media queries for container height in css | Y |
 
 ---
 
 ## Validation testing
 ### CSS
-- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator "css jiqsaw validation") No CSS issues
+- checked with [W3 CSS Validator](assets/images/cssjiqsaw.png "css jiqsaw validation") No CSS issues
 
 [W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation")
 
@@ -98,7 +127,7 @@ The website uses bright and light colours using color gradient for more variety.
 - checked with [W3 HTML Validator](assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
 **Script.js**
-- checked with[JShint script.js](assets/images/script.js%20validationss.png "script.js")
+- checked with[JShint script.js](assets/images/jshint.png "script.js")
 
 **jsquestions.js**
 -checked with[JShint javascript questions](assets/images/jsquestionvalidationss.png "jsquestions")
@@ -149,14 +178,14 @@ All Scripts checked with [JSHint](https://jshint.com/)
 
 | **Sctipt** | **Any Errors?** | **Warnings?** | Other note worthy comments |
 |:----------:|:---------------:|:-------------:|:--------------------------:|
-| script.js | No Errors | 5 Warnings all to do with compatibility | None |
-| jsquestions.js | No Errors | no warnings| None |
-| htmlcssquestions.js | No Errors | no warnings| None |
+| script.js | No Errors | No Warnings  | None |
+| jsquestions.js | No Errors | No Warnings| None |
+| htmlcssquestions.js | No Errors | No Warnings| None |
 
 ### Light House
 
 
-[lighthouse ](assets/images/lighthousess.png "view light house")
+[lighthouse ](assets/images/lighthouse.png "view light house")
 
 
 
@@ -193,19 +222,23 @@ To fork the depository:
 - [MS Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H)
 - [Github Desktop App](https://desktop.github.com/)
 - [ui.dev Am I Responsive](https://ui.dev/amiresponsive)
+- [Wire Frames](https://app.uizard.io/)
 
 ## Wireframes
 ### Start Page
-[Start page wireframe](assets/images/startpagewf.png "view Start Page wire frame")
+[Start page wireframe](assets/images/startwf.png "view Start Page wire frame")
 
 ### Set of Rules
-[Set of Rules wireframe](assets/images/ruleswf.png "view Set of Rules wire frame")
+[Set of Rules wireframe](assets/images/rulewf.png "view Set of Rules wire frame")
+
+### User Information Input
+[ User Information Input wireframe](assets/images/infowf.png "view Set of Rules wire frame")
 
 ### Quiz Box
 [Quiz Box wireframe](assets/images/quizboxwf.png " view Quiz Box wire frame")
 
 ### Score Card
-[Score Card wireframe](assets/images/scorecardwf.png "view Score Card wire frame")
+[Score Card wireframe](assets/images/scorewf.png "view Score Card wire frame")
 
 
 ## Credits

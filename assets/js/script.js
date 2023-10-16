@@ -1,15 +1,17 @@
 /*jshint esversion: 6 */
+//initialize email.js//
+emailjs.init("UOe2Low0qTXYUslK1");
 
 // Selecting all required elements
-const start_btn = document.querySelectorAll(".start_btn button");
-const info_box = document.querySelector(".info_box");
-const user_box = document.querySelector(".user_box");
-const exit_btn = info_box.querySelector(".buttons .quit");
-const exit_quiz_btn = user_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
-const start_quiz_btn = user_box.querySelector(".buttons .start");
+const startBtn = document.querySelectorAll(".start_btn button");
+const infoBox = document.querySelector(".info_box");
+const userBox = document.querySelector(".user_box");
+const exitBtn = infoBox.querySelector(".buttons .quit");
+const exitQuizBtn = userBox.querySelector(".buttons .quit");
+const continueBtn = infoBox.querySelector(".buttons .restart");
+const startQuizBtn = userBox.querySelector(".buttons .start");
 const quiz_box = document.querySelector(".quiz_box");
-const result_box = document.querySelector(".result_box");
+const resultBox = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
@@ -17,6 +19,8 @@ const timeCount = document.querySelector(".timer .timer_sec");
 var container = document.getElementsByClassName('container');
 const queryContainer = document.querySelector(".container");
 var questions = {};
+
+// Add JavaScript to open and close the custom dialog
 
 const confirmationDialog = document.getElementById('custom-dialog');
 const confirmYesButton = document.getElementById('confirm-yes');
@@ -37,6 +41,7 @@ function openConfirmationDialog() {
     queryContainer.style.pointerEvents = 'none';
 }
 
+
 function closeConfirmationDialog() {
     confirmationDialog.style.display = 'none'; // Hide the dialog
     quizBox.classList.remove('blur'); // Remove blur from the quiz box
@@ -51,17 +56,17 @@ function closeConfirmationDialog() {
     queryContainer.style.pointerEvents = 'auto';
 
 }
-
 confirmYesButton.addEventListener('click', () => {
     // Handle "Yes" button action here
     closeConfirmationDialog();
+    // Add your code to navigate or perform the desired action.
 });
 
 confirmNoButton.addEventListener('click', () => {
     // Handle "No" button action here
     closeConfirmationDialog();
+    // Add your code for staying on the quiz or any other action.
 });
-
 
 let exitQuiz = false; // A flag to check if the user wants to exit the quiz
 
@@ -95,11 +100,11 @@ anchorTags.forEach((anchor) => {
 });
 
 // If StartQuiz Button clicked
-start_btn.forEach(button => {
+startBtn.forEach(button => {
     button.addEventListener('click', () => {
         container[0].style.opacity = "0";   
         var jsbool = button.classList.contains("js");
-        info_box.classList.add("activeInfo");  // Show the info_box
+        infoBox.classList.add("activeInfo");  // Show the info_box
 
         if(jsbool){
             questions = jsquestions;
@@ -110,37 +115,37 @@ start_btn.forEach(button => {
 });
 
 // If ExitQuiz button clicked
-exit_btn.onclick = ()=>{
+exitBtn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.remove("activeQuiz"); 
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userBox.classList.remove("activeQuiz"); 
 };
 
-exit_quiz_btn.onclick = ()=>{
+exitQuizBtn.onclick = ()=>{
     container[0].style.opacity = "1";
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.remove("activeQuiz"); 
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userBox.classList.remove("activeQuiz"); 
 };
 
 // If continueQuiz button clicked
-continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); // Hide the info box
-    user_box.classList.add("activeQuiz"); 
+continueBtn.onclick = ()=>{
+    infoBox.classList.remove("activeInfo"); // Hide the info box
+    userBox.classList.add("activeQuiz"); 
 };
 
 // Start the quiz
-start_quiz_btn.onclick = (e)=>{
+startQuizBtn.onclick = (e)=>{
     // Validate email
-    let email = user_box.querySelector(".user_email");
+    let email = userBox.querySelector(".user_email");
     var emailValidate = email.checkValidity();
     
     if(emailValidate){
         e.preventDefault();
         // Get user name and email
-        user_name = user_box.querySelector(".user_name").value;
-        user_email = user_box.querySelector(".user_email").value;
+        user_name = userBox.querySelector(".user_name").value;
+        user_email = userBox.querySelector(".user_email").value;
         if (user_name !== '' && user_email !== '') {
-            user_box.classList.remove("activeQuiz"); 
+            userBox.classList.remove("activeQuiz"); 
             quiz_box.classList.add("activeQuiz"); // Show the quiz box
             showQuestions(0); // Call showQuestions function
             queCounter(1); // Pass 1 parameter to queCounter
@@ -163,13 +168,13 @@ let widthValue = 0;
 let user_name = 'Mehatab';
 let user_email = 'mehatab.pathan231@gmail.com';
 
-const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+const restart_quiz = resultBox.querySelector(".buttons .restart");
+const quit_quiz = resultBox.querySelector(".buttons .quit");
 
 // If restartQuiz button clicked
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); // Show quiz box
-    result_box.classList.remove("activeResult"); // Hide the result box
+    resultBox.classList.remove("activeResult"); // Hide the result box
     timeValue = 20;
     que_count = 0;
     que_numb = 1;
@@ -193,7 +198,11 @@ quit_quiz.onclick = ()=>{
 
 const next_btn = document.querySelector("footer .next_btn");
 
-// Modify the nextClick function
+// If Click Next button clicked
+next_btn.onclick = ()=>{
+    nextClick();
+};
+
 function nextClick() {
     if (que_count < questions.length - 1) {
         que_count++;
@@ -207,27 +216,29 @@ function nextClick() {
         timeText.textContent = "Time Left";
         next_btn.classList.remove("show");
     } else {
-        // If it's the final question, show the result directly
         clearInterval(counter);
         clearInterval(counterLine);
         showResult();
     }
 }
 
-// Update the next_btn.onclick event listener
-next_btn.onclick = () => {
-    nextClick();
-};
-
-
 // Getting questions and options from array
 function showQuestions(index){
     const que_text = document.querySelector(".que_text");
     let que_tag = '<span>'+ questions[index].numb+ "." + questions[index].question +'</span>';
-    let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
-                      +  '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-                      + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-                      + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+    let option_tag =
+  '<div class="option"><span>' +
+  questions[index].options[0] +
+  '</span></div>' +
+  '<div class="option"><span>' +
+  questions[index].options[1] +
+  '</span></div>' +
+  '<div class="option"><span>' +
+  questions[index].options[2] +
+  '</span></div>' +
+  '<div class="option"><span>' +
+  questions[index].options[3] +
+  '</span></div>';
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
 
@@ -242,43 +253,42 @@ let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 // If user clicked on option
-function optionSelected(answer) {
+function optionSelected(answer){
+    next_btn.classList.add("hide");
+    clearInterval(counter);
+    clearInterval(counterLine);
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     const allOptions = option_list.children.length;
-
-    if (userAns == correctAns) {
+    
+    if(userAns == correctAns){
         userScore += 1;
-        answer.classList.add("correct"); // Add green color to correct selected option
+        answer.classList.add("correct");  // Add green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
-    } else {
-        // Answer is incorrect
-        answer.classList.add("incorrect"); // Add red color to incorrect selected option
+    } else {  // Answer is incorrect
+        answer.classList.add("incorrect");  // Add red color to incorrect selected option
         answer.insertAdjacentHTML("beforeend", crossIconTag); // Add cross icon
 
-        // If answer is incorrect, find and mark the correct answer
-        for (let i = 0; i < allOptions; i++) {
-            if (option_list.children[i].textContent == correctAns) {
-                option_list.children[i].classList.add("correct");
+        // If answer is incorrect then automatically select the correct answer
+        for(i=0; i < allOptions; i++) {
+            if(option_list.children[i].textContent == correctAns) {
+                option_list.children[i].setAttribute("class", "option correct");
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
             }
         }
     }
 
-    // Once the user selects, disable all options and reveal the correct answer
-    for (let i = 0; i < allOptions; i++) {
+    // Once user selected, disable all options
+    for (i=0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
+    
 
-    // After a short delay, show the correct answer and enable the "Next" button
-    setTimeout(function () {
-        next_btn.classList.add("show");
+    setTimeout(function() {
+        nextClick();
+        next_btn.classList.remove("hide");
     }, 2000);
 }
-
-
-
-
 
 // Function to show result
 function showResult() {
@@ -288,11 +298,11 @@ function showResult() {
             const messageBox = document.querySelector(".result_box .message");
             messageBox.textContent = "Email sent successfully! ";
 
-            info_box.classList.remove("activeInfo");
+            infoBox.classList.remove("activeInfo");
             quiz_box.classList.remove("activeQuiz");
-            result_box.classList.add("activeResult");
+            resultBox.classList.add("activeResult");
 
-            const scoreText = result_box.querySelector(".score_text");
+            const scoreText = resultBox.querySelector(".score_text");
             if (userScore > 3) {
                 let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
                 scoreText.innerHTML = scoreTag;
@@ -309,11 +319,11 @@ function showResult() {
             const messageBox = document.querySelector(".result_box .message");
             messageBox.textContent = "Failed to send email.";
 
-            info_box.classList.remove("activeInfo");
+            infoBox.classList.remove("activeInfo");
             quiz_box.classList.remove("activeQuiz");
-            result_box.classList.add("activeResult");
+            resultBox.classList.add("activeResult");
 
-            const scoreText = result_box.querySelector(".score_text");
+            const scoreText = resultBox.querySelector(".score_text");
             if (userScore > 3) {
                 let scoreTag = '<p>and congrats! You got <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span></p>';
                 scoreText.innerHTML = scoreTag;
@@ -327,44 +337,35 @@ function showResult() {
         });
 }
 
-let userAnswered = false;
-
 // Timer
-function startTimer(time) {
+function startTimer(time){
     timeCount.textContent = time;
     counter = setInterval(timer, 1000);
-    function timer() {
+    function timer(){
         timeCount.textContent = time;
         time--; // Decrement the time value
-        if (time < 9) {
+        if(time < 9){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
         }
-        if (time < 0) {
+        if(time < 0){
             clearInterval(counter);
             timeText.textContent = "Time Off";
-            if (!userAnswered) {
-                let correctAns = questions[que_count].answer;
-                const allOptions = option_list.children.length;
 
-                for (i = 0; i < allOptions; i++) {
-                    if (option_list.children[i].textContent == correctAns) {
-                        option_list.children[i].setAttribute("class", "option correct");
-                        option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
-                        console.log("Time Off: Auto selected correct answer.");
-                    }
-                }
-                for (i = 0; i < allOptions; i++) {
-                    option_list.children[i].classList.add("disabled");
+            let correctAns = questions[que_count].answer;
+            const allOptions = option_list.children.length;
+
+            for (i=0; i < allOptions; i++){
+                if(option_list.children[i].textContent == correctAns) {
+                    option_list.children[i].setAttribute("class", "option correct");
+                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+                    console.log("Time Off: Auto selected correct answer.");
                 }
             }
-            if (que_count === questions.length - 1) {
-                setTimeout(function () {
-                    showResult();
-                }, 2000);
-            } else {
-                next_btn.classList.add("show");
+            for(i=0; i < allOptions; i++){
+                option_list.children[i].classList.add("disabled");
             }
+            next_btn.classList.add("show");
         }
     }
 }
@@ -399,63 +400,3 @@ function sendEmail() {
     // Return the promise from emailjs.send()
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
-
-// Function to validate the form before submission
-function validateContactForm() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-        alert("Please fill in all the required fields.");
-        return false; // Prevent form submission
-    }
-
-    // If all fields are filled, you can submit the form
-    return true;
-}
-
-function handleFormSubmission() {
-    // Your form submission logic here
-
-    // After a successful submission, show the success message with a fade-in effect
-    const successMessage = document.getElementById("successMessage");
-    successMessage.classList.add("visible");
-}
-
-function sendContactEmail() {
-
-    const validForm = validateContactForm();
-
-    if(validForm){
-    
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    var templateParams = {
-        to_email: email,
-        to_name: name,
-        message: message
-    };
-
-    // Send email using EmailJS
-    emailjs.send('service_kom0awm', 'template_y0qtqv9', templateParams, 'UOe2Low0qTXYUslK1')
-        .then(function(response) {
-            // Reset the form
-            document.getElementById("contactForm").reset();
-            // Display success message
-            var successMessage = "Your message has been sent successfully! We will get back to you soon.";
-            document.getElementById("successMessage").textContent = successMessage;
-            handleFormSubmission();
-        })
-        .catch(function(error) {
-            console.log("Failed to send Email");
-        });
-
-    }
-}
-
-
-
-
