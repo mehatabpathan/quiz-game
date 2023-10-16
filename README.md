@@ -76,7 +76,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 #### 404 Page
 - When a user accesses a non-existing URL on this website, this 404 error page will be displayed to them.
 
-![404 Page](assets/images/contactpage.png)
+![404 Page](assets/images/404page.png)
 
 ### Colour Scheme
 
@@ -123,9 +123,9 @@ The website uses bright and light colours using color gradient for more variety.
 
 ## Validation testing
 ### CSS
-- checked with [W3 CSS Validator](assets/images/cssjiqsaw.png "css jiqsaw validation") No CSS issues
+- checked with jigsaw validator [W3 CSS Validator](assets/images/cssjiqsaw.png "css jiqsaw validation") No CSS issues
 
-[W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation")
+- checked with css validator[W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation") No CSS issues
 
 ### HTML
 - checked with [W3 HTML Validator](assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
