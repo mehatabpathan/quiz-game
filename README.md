@@ -4,11 +4,11 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 ![Programming Quiz Responive website](assets/images/responsive.png)
 
-[View Shoppers Stop Github pages](https://github.com/mehatabpathan/quiz-game "View shoppers stop Github pages")
+[View Programming Quiz Github pages](https://github.com/mehatabpathan/quiz-game "View Programming Quiz Github pages")
 
-[View shoppers Stop Live Website](https://mehatabpathan.github.io/quiz-game/ "View Shoppers stop Live Website")
+[View Programming Quiz Live Website](https://mehatabpathan.github.io/quiz-game/ "View Programming Quiz Live Website")
 
-![Static Badge](https://img.shields.io/badge/Last_Commit-September-red)
+![Static Badge](https://img.shields.io/badge/Last_Commit-October-red)
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
 ![Static Badge](https://img.shields.io/badge/Languages-3-greens)
 
@@ -110,16 +110,16 @@ The website uses bright and light colours using color gradient for more variety.
 | Author Links appearing underneath other elements at certain resolutions | Removed Z index | Y |
 | How to div was displaying upon load | Added hidden class to it to hide it on load | Y |
 | Responsive css attempt of landscape mode set everything in an od skew to left | Removed the css that caused issue | Y |
-| Over responsive footer | There was a buggy CSS code using footer and anchor tags I removed it | Y |
 | Font was difficult to read for some users | Replaced font with a more user friendly font | Y |
 | Hover effect remains active after selecting an answer and next question is loading | Added media querry to remove hover effect on touch devices | Y |
 | Hover effect disabled on all devices | Added missing media querry to the css | Y |
+| Website is not responsive | Added media queries for container height in css | Y |
 
 ---
 
 ## Validation testing
 ### CSS
-- checked with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator "css jiqsaw validation") No CSS issues
+- checked with [W3 CSS Validator](assets/images/cssjiqsaw.png "css jiqsaw validation") No CSS issues
 
 [W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation")
 
@@ -232,7 +232,7 @@ To fork the depository:
 [Set of Rules wireframe](assets/images/rulewf.png "view Set of Rules wire frame")
 
 ### User Information Input
-[Set of Rules wireframe](assets/images/infowf.png "view Set of Rules wire frame")
+[ User Information Input wireframe](assets/images/infowf.png "view Set of Rules wire frame")
 
 ### Quiz Box
 [Quiz Box wireframe](assets/images/quizboxwf.png " view Quiz Box wire frame")
