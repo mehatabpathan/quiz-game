@@ -66,13 +66,17 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 - Users are encouraged to explore the quizzes. By mentioning that the quizzes help users learn new concepts, the content invites visitors to interact with the educational materials provided on the site.
 
-![Score Crad](assets/images/aboutpage.png)
+![About Page](assets/images/aboutpage.png)
 
 #### Contact Page
  - The page provides clear instructions and feedback to the user. If there are any issues, suggestions, or questions, users are encouraged to reach out. The success message confirms to the user that their message has been successfully submitted.
 
-![Score Crad](assets/images/contactpage.png)
+![Contacct Page](assets/images/contactpage.png)
 
+#### 404 Page
+- When a user accesses a non-existing URL on this website, this 404 error page will be displayed to them.
+
+![404 Page](assets/images/contactpage.png)
 
 ### Colour Scheme
 
