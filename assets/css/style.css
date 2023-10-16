@@ -8,6 +8,11 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
+body { padding-top: 40px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
 #custom-dialog {
     display: none;
     position: fixed;
@@ -62,6 +67,7 @@ body {
 }
 
 div.container {
+    margin-top:30px;
     opacity:1;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;     
