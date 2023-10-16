@@ -399,9 +399,4 @@ function sendEmail() {
 
     // Return the promise from emailjs.send()
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> baff94d6a1b150f67fbea5e4f35e96ce596a2149

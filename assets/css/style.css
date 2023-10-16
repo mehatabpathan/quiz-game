@@ -110,11 +110,7 @@ div.container.fade {
 }
 
 body {
-<<<<<<< HEAD
     background: url('../images/image.png') no-repeat;
-=======
-    background: url('../images/image.jpeg') no-repeat;
->>>>>>> baff94d6a1b150f67fbea5e4f35e96ce596a2149
     background-size: cover;
     height: 100vh;
     width: 100vw;
