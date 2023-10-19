@@ -401,26 +401,6 @@ function sendEmail() {
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
 
-// Check if the document has fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Add an event listener for errors
-    window.addEventListener("error", function(event) {
-        // Prevent the default browser behavior for the error event
-        event.preventDefault();
-
-        // Redirect to the custom 404 error page
-        window.location.href = "/404.html";
-    });
-
-    // Check for 404 status codes from AJAX requests
-    XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
-    XMLHttpRequest.prototype.send = function() {
-        this.addEventListener("load", function() {
-            if (this.status === 404) {
-                // Redirect to the custom 404 error page
-                window.location.href = "/404.html";
-            }
-        });
-        this.realSend.apply(this, arguments);
-    };
-});
+if (pageNotFound) {
+    window.location.href = '404.html'; // Redirect to the custom 404 error page
+}
