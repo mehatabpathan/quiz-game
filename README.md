@@ -120,9 +120,7 @@ The website uses bright and light colours using color gradient for more variety.
 | ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
 |  Enter you  Information details | we need to enter name and emailid and press enter | At the end of the score we will get the mail in our registered email | Works as expected |
 
-<details><summar<img src="assets/images/navi.png">ots</summary>
-emailcheck src="
-</details>
+
 <details><summary>Screenshots</summary>
 <img src="assets/images/emailjs.png">
 </details>
@@ -185,22 +183,40 @@ emailcheck src="
 ---
 
 ## Validation testing
-### CSS
-- checked with jigsaw validator [W3 CSS Validator](assets/images/cssjiqsaw.png "css jiqsaw validation") No CSS issues
+
+### HTML Validation
+
+<details><summary>HTML</summary>
+<img src="assets/images/htmlvalidationss.png"></details>
+
+The W3C Markup Validation Service was used to validate the HTML of the website. Page pass with no errors no warnings to show.
+
+### CSS Validation
+
+<details><summary>CSS</summary>
+<img src="assets/images/cssjiqsaw.pn"></details>
 
 - checked with css validator[W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation") No CSS issues
 
-### HTML
-- checked with [W3 HTML Validator](assets/images/htmlvalidationss.png "html validation") No HTML validation issues found
 
-**Script.js**
-- checked with[JShint script.js](assets/images/jshint.png "script.js")
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. Page pass with no errors no warnings to show.
+
+### JavaScript Validation
+
+<details><summary>JS</summary>
+<img src="assets/images/jshint.png"></details>
+
+JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript file. There were 4 undefined variables found in the check . All are outside libraries which are connected directly to HTML file - script code and used .
 
 **jsquestions.js**
--checked with[JShint javascript questions](assets/images/jsquestionvalidationss.png "jsquestions")
+
+<details><summary>JS Questions</summary>
+<img src="assets/images/jsquestionvalidationss.png"></details>
 
 **htmlcssquestions.js**
--checked with[JShint html/css questions](assets/images/htmlcssqvaliss.png "html/css questions")
+
+<details><summary>HTMLCSS Questions</summary>
+<img src="assets/images/htmlcssqvaliss.png"></details>
 
 
 ### Contrast
