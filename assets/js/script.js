@@ -400,7 +400,3 @@ function sendEmail() {
     // Return the promise from emailjs.send()
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
-
-if (pageNotFound) {
-    window.location.href = '404.html'; // Redirect to the custom 404 error page
-}
