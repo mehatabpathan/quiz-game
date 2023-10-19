@@ -15,15 +15,31 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 ## User Stories
 - As a user, I want to navigate to different sections of the website so that I can choose the quiz I want to play.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/navigationbar.png">
+    </details>
 - As a user, I want to start a quiz so that I can test my programming knowledge.
 - As a user, I want to see a list of available questions in a quiz so that I can prepare and understand the scope of the quiz.
 - As a user, I want to receive clear instructions on how the quiz works so that I can understand the rules.
 - As a user, I want to enter my name and email before starting the quiz so that I can be identified and receive my results.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/emailcheck.png">
+    </details>
 - As a user, I want to see my progress in the quiz so that I know how many questions are remaining.
 - As a user, I want to see my final score at the end of the quiz so that I know how well I performed.
 - As a user, I want to be able to replay the quiz so that I can try to improve my score.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/replayquiz.png">
+    </details>
 - As a user, I want to be able to quit the quiz at any time so that I can exit the game.
 - As a user, I want the quiz to be visually appealing and easy to understand so that I can enjoy my experience.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/questions.png">
+    </details> 
+- As a user, I want the 404 page to be visible when i press the wrong url it should show the Error page.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/404page.png">
+    </details>
 
 ## Features
 ### Start Page
@@ -71,7 +87,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 #### Contact Page
  - The page provides clear instructions and feedback to the user. If there are any issues, suggestions, or questions, users are encouraged to reach out. The success message confirms to the user that their message has been successfully submitted.
 
-![Contacct Page](assets/images/contactpage.png)
+![Contact Page](assets/images/contactpage.png)
 
 #### 404 Page
 - When a user accesses a non-existing URL on this website, this 404 error page will be displayed to them.
@@ -85,6 +101,53 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 The website uses bright and light colours using color gradient for more variety.Background image I used #03F2ED color and for buttons #087C4D is used.with opacity 1 and z-index is 1.
 
 ## Testing
+
+### Testing user stories
+
+1. As a user, I want to navigate to different sections of the website so that I can choose the quiz I want to play.
+
+| **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
+| ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
+| Welcome Page | Click on the Home button  | It should show 2 quiz boxes as expected | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/images/navi.png">
+</details>
+
+2. As a user, I want to enter my name and email before starting the quiz so that I can be identified and receive my results.
+
+| **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
+| ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
+|  Enter you  Information details | we need to enter name and emailid and press enter | At the end of the score we will get the mail in our registered email | Works as expected |
+
+<details><summar<img src="assets/images/navi.png">ots</summary>
+emailcheck src="
+</details>
+<details><summary>Screenshots</summary>
+<img src="assets/images/emailjs.png">
+</details>
+
+3. As a user, I want to be able to replay the quiz so that I can try to improve my score.
+
+| **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
+| ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
+|  Replay Button | when we press the button it should take to the quiz box | it takes to the quiz box we can replay the game again | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/images/replaybutton.png">
+</details>
+
+4. As a user, I want the 404 page to be visible when i press the wrong url it should show the Error page.
+
+
+| **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
+| ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
+|  404 Error page | when we press the incorrect URL |It should show the error page | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/images/404page.png">
+</details>
+
 ### How I tested
 | What test was completed | Passed? Y(yes)/N(no) |
 |:-----------------------:|:-------------------:|
@@ -197,6 +260,13 @@ All Scripts checked with [JSHint](https://jshint.com/)
 Used GitHub Pages to bring the site to life [View The Site Here](https://mehatabpathan.github.io/quiz-game/)
 
 ### Local Development
+The website was deployed using GitHub Pages by following these steps:
+
+1. In the GitHub repository navigate to the Settings tab
+2. On the left-hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automatically you will ses a ribbon on the top saying: "Your site is published at https://mehatabpathan.github.io/quiz-game/
+
 
 #### How To Fork
 
