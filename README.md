@@ -26,6 +26,10 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
     <img src="assets/images/emailcheck.png">
     </details>
 - As a user, I want to see my progress in the quiz so that I know how many questions are remaining.
+- As a user, I want to navigate from one page to another I kept the dialog box as yes or no so i can confirm it to stop the quiz in  middle and can go to different page.
+    <details><summary>Screenshots</summary>
+    <img src="assets/images/dialogbox.png">
+    </details>
 - As a user, I want to see my final score at the end of the quiz so that I know how well I performed.
 - As a user, I want to be able to replay the quiz so that I can try to improve my score.
     <details><summary>Screenshots</summary>
@@ -125,7 +129,18 @@ The website uses bright and light colours using color gradient for more variety.
 <img src="assets/images/emailjs.png">
 </details>
 
-3. As a user, I want to be able to replay the quiz so that I can try to improve my score.
+3. As a user, I want to stop the quiz and go to different quiz.
+
+
+| **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
+| ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
+|  Dialog box | when i press the diffrent page in the middle of the quiz |It should show the dialog box and hide all the remaining things | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/images/dialogbox.png">
+</details>
+
+4. As a user, I want to be able to replay the quiz so that I can try to improve my score.
 
 | **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |
 | ------------ | --------------------------- | ------------------------------------------------------------ | ----------------- |
@@ -135,7 +150,7 @@ The website uses bright and light colours using color gradient for more variety.
 <img src="assets/images/replaybutton.png">
 </details>
 
-4. As a user, I want the 404 page to be visible when i press the wrong url it should show the Error page.
+5. As a user, I want the 404 page to be visible when i press the wrong url it should show the Error page.
 
 
 | **Feature**  | **Action**                  | **Expected Result**                                          | **Actual Result** |

@@ -400,3 +400,43 @@ function sendEmail() {
     // Return the promise from emailjs.send()
     return emailjs.send('service_kom0awm', 'template_cw85qpi', templateParams, 'UOe2Low0qTXYUslK1');
 }
+
+// Get form and form fields
+var form = document.querySelector('.user_box form');
+var userNameInput = document.getElementById('user_name');
+var userEmailInput = document.getElementById('user_email');
+
+// Function to validate email using a regular expression
+function isValidEmail(email) {
+    var emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+}
+
+// Function to validate the form
+function validateForm(event) {
+    var isValid = true;
+
+    // Validate user name (should not be empty)
+    if (userNameInput.value.trim() === '') {
+        isValid = false;
+        alert('Please enter your name.');
+    }
+
+    // Validate email
+    if (userEmailInput.value.trim() === '') {
+        isValid = false;
+        alert('Please enter your email.');
+    } else if (!isValidEmail(userEmailInput.value)) {
+        isValid = false;
+        alert('Please enter a valid email address.');
+    }
+
+    // Prevent form submission if validation fails
+    if (!isValid) {
+        event.preventDefault();
+    }
+}
+
+// Attach the validateForm function to the form's submit event
+form.addEventListener('submit', validateForm);
+
