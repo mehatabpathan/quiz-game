@@ -15,6 +15,7 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 
 ## User Stories
 - As a user, I want to navigate to different sections of the website so that I can choose the quiz I want to play.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/navigationbar.png">
     </details>
@@ -22,25 +23,30 @@ Welcome to the JavaScript and HTML/CSS Fundamentals Quiz! This quiz is designed 
 - As a user, I want to see a list of available questions in a quiz so that I can prepare and understand the scope of the quiz.
 - As a user, I want to receive clear instructions on how the quiz works so that I can understand the rules.
 - As a user, I want to enter my name and email before starting the quiz so that I can be identified and receive my results.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/emailcheck.png">
     </details>
 - As a user, I want to see my progress in the quiz so that I know how many questions are remaining.
 - As a user, I want to navigate from one page to another I kept the dialog box as yes or no so i can confirm it to stop the quiz in  middle and can go to different page.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/dialogbox.png">
     </details>
 - As a user, I want to see my final score at the end of the quiz so that I know how well I performed.
 - As a user, I want to be able to replay the quiz so that I can try to improve my score.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/replayquiz.png">
     </details>
 - As a user, I want to be able to quit the quiz at any time so that I can exit the game.
 - As a user, I want the quiz to be visually appealing and easy to understand so that I can enjoy my experience.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/questions.png">
     </details> 
 - As a user, I want the 404 page to be visible when i press the wrong url it should show the Error page.
+
     <details><summary>Screenshots</summary>
     <img src="assets/images/404page.png">
     </details>
@@ -209,7 +215,7 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 ### CSS Validation
 
 <details><summary>CSS</summary>
-<img src="assets/images/cssjiqsaw.pn"></details>
+<img src="assets/images/cssjiqsaw.png"></details>
 
 - checked with css validator[W3 CSS Validation Image](assets/images/cssvalidationss.png "css validation") No CSS issues
 
