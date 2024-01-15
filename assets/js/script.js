@@ -21,6 +21,7 @@ const queryContainer = document.querySelector(".container");
 var questions = {};
 
 // Add JavaScript to open and close the custom dialog
+//custom code
 
 const confirmationDialog = document.getElementById('custom-dialog');
 const confirmYesButton = document.getElementById('confirm-yes');
@@ -382,6 +383,7 @@ function startTimerLine(time){
 }
 
 // Creating a new span tag and passing the question number and total question
+//custom code
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQueCountTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
@@ -389,6 +391,7 @@ function queCounter(index){
 }
 
 // Function to send email using EmailJS
+//custom code
 function sendEmail() {
     var templateParams = {
         to_email: user_email,
@@ -401,6 +404,7 @@ function sendEmail() {
 }
 
 // Get form and form fields
+//custom code
 var form = document.querySelector('.user_box form');
 var userNameInput = document.getElementById('user_name');
 var userEmailInput = document.getElementById('user_email');
