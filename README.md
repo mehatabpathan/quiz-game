@@ -356,7 +356,7 @@ To fork the depository:
 
 ### Code
 
-- I created my recipe website partially with the help of [helej github](https://helej.github.io/quiz-game-about-Estonia/).
+- I created my quiz partially with the help of [helej github](https://helej.github.io/quiz-game-about-Estonia/).
 
 
 ### Content
