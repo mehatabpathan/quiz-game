@@ -28,8 +28,8 @@ const confirmNoButton = document.getElementById('confirm-no');
 const quizBox = document.querySelector('.quiz_box');
 
 function openConfirmationDialog() {
-    confirmationDialog.style.display = 'block'; // Show the dialog
-    quizBox.classList.add('blur'); // Add blur to the quiz box
+    confirmationDialog.style.display = 'block'; 
+    quizBox.classList.add('blur'); 
 
     // Disable options and the "Next" button
     const optionElements = document.querySelectorAll('.option');
@@ -43,8 +43,8 @@ function openConfirmationDialog() {
 
 
 function closeConfirmationDialog() {
-    confirmationDialog.style.display = 'none'; // Hide the dialog
-    quizBox.classList.remove('blur'); // Remove blur from the quiz box
+    confirmationDialog.style.display = 'none'; 
+    quizBox.classList.remove('blur'); 
 
     // Re-enable options and the "Next" button
     const optionElements = document.querySelectorAll('.option');
@@ -59,7 +59,6 @@ function closeConfirmationDialog() {
 confirmYesButton.addEventListener('click', () => {
     // Handle "Yes" button action here
     closeConfirmationDialog();
-    // Add your code to navigate or perform the desired action.
 });
 
 confirmNoButton.addEventListener('click', () => {

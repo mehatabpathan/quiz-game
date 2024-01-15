@@ -354,6 +354,11 @@ To fork the depository:
 
 ## Credits
 
+### Code
+
+- I created my recipe website partially with the help of [link](https://helej.github.io/quiz-game-about-Estonia/).
+
+
 ### Content
 
 All information provided was written by myself.
