@@ -356,7 +356,7 @@ To fork the depository:
 
 ### Code
 
-- I created my quiz partially with the help of [helej github](https://helej.github.io/quiz-game-about-Estonia/).
+- I created my quiz partially with the help of [click here](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/).
 
 
 ### Content
